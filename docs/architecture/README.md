@@ -10,6 +10,7 @@ This directory captures system boundaries, major data flows, security requiremen
 ## Documents
 
 - [System design](system-design.md) — proposed logical architecture, trust boundaries, data domains, integrations, and unresolved choices.
+- [Tenancy model](tenancy-model.md) — proposed user, organization, creator, resource-ownership, and isolation boundaries; not an implementation decision.
 - [Security baseline](security.md) — minimum security and operational controls to design for.
 - [Threat model](threat-model.md) — initial STRIDE-informed threats, abuse cases, trust boundaries, and launch-blocking questions.
 - [Risk register](risk-register.md) — provisional market, business, security, legal, and operational risks.
