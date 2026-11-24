@@ -29,6 +29,7 @@
 ## Design system
 - [Design system direction](design-system/README.md) — experience principles, surfaces, component layers, and governance
 - [Design foundations](design-system/foundations.md) — semantic token strategy, typography, layout, component inventory, and accessibility
+- [Visual identity directions](design-system/visual-directions.md) — three visual concepts and a recommended hybrid direction; not approved
 
 ## Sprints
 - [Sprint planning](sprints/README.md)
