@@ -5,9 +5,11 @@
 - [Product requirements document](product/prd.md) — draft, pending validation
 - [Target user personas](product/personas.md) — hypotheses to validate
 - [Proposed user journeys](product/user-journeys.md) — draft flows
+- [Transaction lifecycle](product/transaction-lifecycle.md) — conceptual payment and fulfillment states
 
 ## Strategy
 - [Market validation plan](strategy/market-validation.md)
+- [Business model](strategy/business-model.md) — proposed revenue and commercial model
 
 ## Architecture
 Architecture documentation is intentionally pending discovery and validation. Do not treat earlier architecture suggestions as approved technical decisions.
