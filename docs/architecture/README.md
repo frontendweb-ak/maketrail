@@ -9,8 +9,10 @@ This directory captures system boundaries, major data flows, security requiremen
 
 ## Documents
 
+- [Architecture strategy](architecture-strategy.md) — recommended product and technical architecture, trade-offs, and deferred decisions.
+- [Conceptual domain model](domain-model.md) — business concepts, relationships, ownership classes, and lifecycle invariants.
 - [System design](system-design.md) — proposed logical architecture, trust boundaries, data domains, integrations, and unresolved choices.
-- [Tenancy model](tenancy-model.md) — proposed user, organization, creator, resource-ownership, and isolation boundaries; not an implementation decision.
+- [Organization and resource-access model](tenancy-model.md) — optional organization model; Maketrail is not assumed to be tenant-first.
 - [Security baseline](security.md) — minimum security and operational controls to design for.
 - [Threat model](threat-model.md) — initial STRIDE-informed threats, abuse cases, trust boundaries, and launch-blocking questions.
 - [Risk register](risk-register.md) — provisional market, business, security, legal, and operational risks.
