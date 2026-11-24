@@ -6,6 +6,7 @@
 - [MVP scope proposal](product/mvp-scope.md) — conditional scope; not approved or frozen
 - [Target user personas](product/personas.md) — hypotheses to validate
 - [Proposed user journeys](product/user-journeys.md) — draft flows
+- [Information architecture](product/information-architecture.md) — proposed sitemap, navigation, routes, and surface boundaries
 - [Transaction lifecycle](product/transaction-lifecycle.md) — conceptual payment and fulfillment states
 
 ## Strategy
