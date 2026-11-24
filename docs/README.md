@@ -18,10 +18,16 @@
 
 ## Architecture
 - [Architecture overview](architecture/README.md)
+- [Architecture strategy](architecture/architecture-strategy.md) — recommended direction and trade-offs; no technology stack selected
+- [Conceptual domain model](architecture/domain-model.md) — proposed entities, relationships, ownership, and lifecycle invariants
 - [Proposed system design](architecture/system-design.md) — logical architecture; no stack selected
 - [Security baseline](architecture/security.md) — proposed security and operational controls
 - [Initial threat model](architecture/threat-model.md) — qualitative, not a security assessment
 - [Risk register](architecture/risk-register.md) — provisional risk ratings and launch gates
+
+## Design system
+- [Design system direction](design-system/README.md) — experience principles, surfaces, component layers, and governance
+- [Design foundations](design-system/foundations.md) — semantic token strategy, typography, layout, component inventory, and accessibility
 
 ## Sprints
 - [Sprint planning](sprints/README.md)
