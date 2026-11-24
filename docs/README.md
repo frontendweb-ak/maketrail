@@ -2,6 +2,9 @@
 
 ## Product
 - [Product vision](product/vision.md)
+- [Product requirements document](product/prd.md) — draft, pending validation
+- [Target user personas](product/personas.md) — hypotheses to validate
+- [Proposed user journeys](product/user-journeys.md) — draft flows
 
 ## Strategy
 - [Market validation plan](strategy/market-validation.md)
