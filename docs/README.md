@@ -16,16 +16,16 @@
 - [Feature specification guide](features/README.md)
 
 ## Architecture
-Architecture documentation is intentionally pending discovery and validation. Do not treat earlier architecture suggestions as approved technical decisions.
-
-## Features
-Feature specifications will be added after validation establishes the first buyer problem and product wedge.
+- [Architecture overview](architecture/README.md)
+- [Proposed system design](architecture/system-design.md) — logical architecture; no stack selected
+- [Security baseline](architecture/security.md) — proposed controls requiring threat modeling
 
 ## Sprints
 - [Sprint planning](sprints/README.md)
 
 ## Decisions
 - [Decision log](decisions/README.md)
+- [ADR-0001: Modular application evaluation](decisions/0001-modular-monolith-evaluation.md) — proposed, not accepted
 
 ## Operations
 Operational policies for moderation, verification, payments, support, and incident response will be developed before those capabilities launch.
