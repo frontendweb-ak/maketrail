@@ -30,6 +30,7 @@
 - [Design system direction](design-system/README.md) — experience principles, surfaces, component layers, and governance
 - [Design foundations](design-system/foundations.md) — semantic token strategy, typography, layout, component inventory, and accessibility
 - [Visual identity directions](design-system/visual-directions.md) — three visual concepts and a recommended hybrid direction; not approved
+- [Mockup register](design-system/mockup-register.md) — stable screen IDs, source image mapping, approval status, and implementation rules
 
 ## Sprints
 - [Sprint planning](sprints/README.md)
