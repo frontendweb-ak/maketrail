@@ -103,6 +103,9 @@ Use precise labels:
 
 Do not claim “secure,” “safe,” “production-ready,” or “vulnerability-free” from a build, test suite, static scan, or limited review alone.
 
-## 10. Required follow-up
+## 10. Related threat and risk documents
 
-Create a threat model and risk-based test plan once the first MVP flows and architecture choices are approved. This baseline is not a substitute for professional security review, legal review, or implementation-specific testing.
+- [Threat model](threat-model.md) — initial qualitative threat analysis and abuse cases.
+- [Risk register](risk-register.md) — provisional risk priorities and launch gates.
+
+This baseline and the linked documents are not a substitute for professional security review, legal review, or implementation-specific testing.
