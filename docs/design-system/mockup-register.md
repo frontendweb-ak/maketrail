@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 0.1  
+**Register version:** 0.2  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -23,6 +23,19 @@ A mockup ID identifies a screen concept, not a route contract or a promise that 
 **Current source asset:** [Open the original mockup image](sandbox:/mnt/data/a_clean_modern_ui_concept_collage_for_maketrail.png)
 
 > Asset hosting note: this link points to the image attachment in the originating ChatGPT conversation. The image binary has not yet been committed to this Git repository, so the sandbox link is not a permanent public GitHub asset URL. Before sharing this register outside the originating conversation or using it as a durable repository asset, copy the original image into the repository (recommended location: `docs/design-system/mockups/MT-VIS-001.png`) and replace this link with its GitHub URL.
+
+## 2.1 Consolidated reference board (new concept)
+
+**Reference board ID:** `MT-BOARD-002`  
+**Title:** Maketrail — Consolidated UI Reference Board  
+**Asset filename:** `a_clean_flat_maketrail_design_reference_final.png`  
+**Canvas:** 1536 × 1024 px  
+**Format:** PNG  
+**Composition:** Four screen concepts plus a right-side design-token/implementation reference panel.
+
+**Current source asset:** [Open consolidated reference board](sandbox:/mnt/data/a_clean_flat_maketrail_design_reference_final.png)
+
+This board consolidates the four existing screen IDs and introduces visual token suggestions. The generated token values and typography shown in the board are **conceptual proposals only**; they are not approved design-system tokens. The board's “Final” label is artwork text, not an approval status. The screen approval statuses below remain unchanged until explicit review and approval.
 
 ## 3. Screen-to-mockup mapping
 
@@ -85,7 +98,14 @@ The image is a direction-setting concept. It does not establish exact color valu
 7. If a screen cannot be built exactly because of platform, accessibility, content, or responsive constraints, document the deviation and obtain approval rather than improvising silently.
 8. Keep design tokens and reusable components consistent with the approved mockup set; do not treat this first collage as a complete component specification.
 
-## 6. Approval status
+## 6. Delivery status and approval status
+
+- Initial four-screen concept set: **COMPLETED** as a concept baseline (`MT-VIS-001`).
+- Consolidated reference board: **COMPLETED** as a second visual reference (`MT-BOARD-002`).
+- Design freeze: **NOT FROZEN** — visual direction is established for exploration, but the individual screens and exact tokens have not been approved.
+- Implementation readiness: **NOT READY** — screen-level refinement, responsive specifications, interaction states, and token approval remain required.
+
+## 7. Approval status
 
 | Mockup ID | Current status | Next action |
 |---|---|---|
@@ -96,7 +116,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 
 No screen in this register is currently approved as a pixel-perfect implementation reference.
 
-## 7. Related documents
+## 8. Related documents
 
 - [Visual identity directions](visual-directions.md)
 - [Design foundations](foundations.md)
