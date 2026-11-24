@@ -3,6 +3,7 @@
 ## Product
 - [Product vision](product/vision.md)
 - [Product requirements document](product/prd.md) — draft, pending validation
+- [MVP scope proposal](product/mvp-scope.md) — conditional scope; not approved or frozen
 - [Target user personas](product/personas.md) — hypotheses to validate
 - [Proposed user journeys](product/user-journeys.md) — draft flows
 - [Transaction lifecycle](product/transaction-lifecycle.md) — conceptual payment and fulfillment states
