@@ -95,6 +95,8 @@ Do not choose a component framework or token implementation until the applicatio
 
 ## 9. Related documents
 
+- [Mockup register](mockup-register.md) — stable IDs and screen-to-image mapping for the first four-screen visual concept.
+
 - [Visual identity directions](visual-directions.md) — three concepts, comparative assessment, and a hybrid recommendation; not yet approved.
 
 - [Design foundations](foundations.md)
