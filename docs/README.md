@@ -1,0 +1,22 @@
+# Documentation index
+
+## Product
+- [Product vision](product/vision.md)
+
+## Strategy
+- [Market validation plan](strategy/market-validation.md)
+
+## Architecture
+Architecture documentation is intentionally pending discovery and validation. Do not treat earlier architecture suggestions as approved technical decisions.
+
+## Features
+Feature specifications will be added after validation establishes the first buyer problem and product wedge.
+
+## Sprints
+- [Sprint planning](sprints/README.md)
+
+## Decisions
+- [Decision log](decisions/README.md)
+
+## Operations
+Operational policies for moderation, verification, payments, support, and incident response will be developed before those capabilities launch.
