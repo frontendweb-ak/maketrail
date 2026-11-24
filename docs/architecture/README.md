@@ -11,6 +11,8 @@ This directory captures system boundaries, major data flows, security requiremen
 
 - [System design](system-design.md) — proposed logical architecture, trust boundaries, data domains, integrations, and unresolved choices.
 - [Security baseline](security.md) — minimum security and operational controls to design for.
+- [Threat model](threat-model.md) — initial STRIDE-informed threats, abuse cases, trust boundaries, and launch-blocking questions.
+- [Risk register](risk-register.md) — provisional market, business, security, legal, and operational risks.
 
 ## Decision policy
 
@@ -19,6 +21,7 @@ This directory captures system boundaries, major data flows, security requiremen
 - Select technologies only when a validated product requirement, operational constraint, and cost/risk comparison support the choice.
 - Keep early architecture reversible. Avoid distributed infrastructure and premature scale optimization.
 - Payment, payout, tax, privacy, and marketplace legal roles require provider and professional review before launch.
+- Risk ratings are provisional until supported by real validation, provider review, or technical evidence.
 
 ## Current status
 
