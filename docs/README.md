@@ -11,6 +11,10 @@
 - [Market validation plan](strategy/market-validation.md)
 - [Business model](strategy/business-model.md) — proposed revenue and commercial model
 
+## Features
+- [Master feature map](features/feature-map.md)
+- [Feature specification guide](features/README.md)
+
 ## Architecture
 Architecture documentation is intentionally pending discovery and validation. Do not treat earlier architecture suggestions as approved technical decisions.
 
