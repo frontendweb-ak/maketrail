@@ -1,134 +1,77 @@
-# Maketrail tenancy model
+# Maketrail organization and resource-access model
 
-**Status:** Proposed domain model — not an approved implementation decision  
-**Version:** 0.1  
+**Status:** Proposed domain guidance — organization features unvalidated  
+**Version:** 0.2  
 **Last updated:** 2026-11-24
 
-## 1. Purpose
+## 1. Correct framing
 
-Define how Maketrail should model users, organizations, creator identities, and data boundaries before detailed feature or database design. This is a logical product model, not a database schema or authorization implementation.
+Maketrail is a multi-sided marketplace. It should not be treated as a tenant-first SaaS application by default.
 
-## 2. Recommendation
+The platform has global marketplace resources, individual users, creator identities, optional organizations, transaction participants, and privileged platform operators. Organization workspaces are a possible feature for agencies and studios—not the universal boundary for all data.
 
-Design for a **shared global marketplace with optional organization workspaces**.
+This document supersedes the earlier framing that described the recommendation as a tenant-aware architecture. It does not authorize organization workspace implementation.
 
-- Maketrail is one global marketplace with a shared public catalog.
-- An organization is a workspace boundary for a business or team using Maketrail.
-- A user is a human account and may act personally or as a member of one or more organizations.
-- A creator profile is a marketplace identity; it is not automatically the same thing as an organization.
-- Public listings are marketplace resources. Private drafts, team inquiries, orders, billing details, and workspace settings need explicit access rules.
+## 2. Core concepts
 
-Do not create a separate deployment, database, or marketplace instance for every organization by default.
+- **Platform:** global marketplace, catalog policy, moderation, and operator environment.
+- **User:** an individual human account.
+- **Creator profile:** public creator identity for an individual or, if validated, a studio.
+- **Organization:** optional business/team identity.
+- **Membership:** relationship between a user and an organization, with role and status.
+- **Buyer context:** whether a specific inquiry/order is personal or made on behalf of an organization.
+- **Platform role:** permission to perform a restricted Maketrail operation; unrelated to organization membership.
 
-## 3. Core concepts
+A user may eventually belong to multiple organizations. A creator may be an individual or studio. Both require validation.
 
-| Concept | Meaning |
-|---|---|
-| Platform | Maketrail's global marketplace and operator environment |
-| User | Individual authenticated person |
-| Organization | Optional workspace representing a business or team |
-| Membership | Relationship between a user and an organization, including role and status |
-| Creator profile | Public-facing creator identity, belonging to an individual or potentially a studio |
-| Product | Reusable software solution offered in the marketplace |
-| Listing | A product's marketplace publication and commercial presentation |
-| Buyer context | Whether an action is performed personally or on behalf of an organization |
+## 3. Resource classes
 
-A user may belong to multiple organizations. An organization may have multiple users. These are proposed capabilities to validate, not confirmed requirements.
-
-## 4. Resource ownership and visibility
-
-| Resource | Likely owner/context | Default visibility |
+| Class | Examples | Access principle |
 |---|---|---|
-| Public product listing | Marketplace / creator | Public after approval |
-| Public creator profile | Creator | Public fields only |
-| Creator listing draft | Creator or creator organization | Private to authorized collaborators |
-| Personal profile and settings | User | User and authorized platform operations |
-| Organization profile and membership | Organization | Members according to role |
-| Organization inquiry or collection | Organization, if validated | Authorized members only |
-| Personal inquiry | User | User and explicitly involved parties |
-| Order and accepted license | Buyer context recorded at purchase | Buyer, relevant creator/seller, authorized operations |
-| Payment and payout records | Marketplace transaction / relevant account | Strictly restricted |
-| Moderation and audit records | Maketrail operations | Restricted by operational role |
+| Marketplace-global | Taxonomy, public policies, public search configuration | Platform-managed |
+| Public | Published product listings, public creator profiles | Public read, controlled publication |
+| User-owned | Account settings, personal inquiries | User and narrowly authorized operations |
+| Creator-owned | Drafts, product management, creator settings | Creator owner/collaborators and reviewers as required |
+| Organization-scoped (optional) | Shared inquiries, collections, team orders, membership | Active membership plus resource-specific permission |
+| Transaction-scoped | Orders, accepted terms, payment references, entitlements | Explicit transaction participants and restricted operations |
+| Platform-restricted | Moderation evidence, fraud signals, audit, finance operations | Explicit operator permission and audit |
 
-Do not give a creator access to an organization's unrelated workspace data merely because the creator is involved in one inquiry or order.
+A resource can involve multiple parties without being owned by all of them. A creator's access to one inquiry does not grant access to the buyer's other activity.
 
-## 5. Authorization principles
+## 4. Authorization rules
 
-1. Authenticate the person; authorize the action and resource. A valid session alone grants no organization or resource access.
-2. Organization-scoped actions require active membership and a role permitted to perform the action.
-3. When a user belongs to multiple organizations, the acting organization context must be explicit and validated server-side.
-4. Deny by default when ownership, membership, or permission evidence is missing.
-5. Enforce authorization at every API/service boundary and in background jobs; hiding UI controls is not access control.
-6. Prevent cross-organization reads and writes, including identifier-guessing and parameter-tampering attacks.
-7. Keep platform operations separate from organization roles. Support, moderation, finance, and security access must be least-privileged and audited.
-8. Expose only explicitly published public fields through public catalog endpoints.
-9. Limit creator access to buyer information to the specific inquiry/order and agreed fulfillment purpose.
-10. Keep personal and organization activity distinguishable. A user's personal purchase does not automatically belong to every organization they join.
+1. Authenticate the human account, then authorize each action and resource separately.
+2. Apply least privilege and deny by default.
+3. Check resource ownership and relationship to the specific transaction or inquiry.
+4. If an organization-scoped feature exists, validate active membership and permission server-side on every request and background job.
+5. Do not trust a client-supplied organization ID or role.
+6. Keep platform operator permissions separate from creator, buyer, and organization roles.
+7. Make sensitive support/admin access attributable and auditable.
+8. Test denied access, identifier tampering, membership removal, role changes, exports, caches, and background jobs.
 
-## 6. Candidate role model
+## 5. Architecture implications
 
-These are role hypotheses, not a final permission matrix.
+- Do not add an organization/tenant key to every entity.
+- Do not choose database-per-tenant or schema-per-tenant.
+- Do not require an organization to register, publish, inquire, or buy unless the validated legal/commercial workflow requires it.
+- Record buyer context on the relevant transaction rather than assuming all user activity belongs to an organization.
+- Define ownership and access for each resource before schema design.
+- Select database-level row security or application authorization only after stack and threat analysis; regardless, enforce authorization in trusted server-side code.
 
-**Organization roles**
-- Owner: manages organization settings, membership, and ownership transfer.
-- Admin: manages members and workspace settings within delegated authority.
-- Buyer/member: performs permitted buyer actions for the organization.
-- Finance/billing: accesses approved billing and transaction information, if needed.
-- Viewer: read-only access to selected workspace resources.
+## 6. Validation questions
 
-**Platform roles**
-- Support: limited case-specific support access.
-- Catalog reviewer: listing and rights review.
-- Finance operations: restricted transaction/refund/payout operations.
-- Security administrator: security and incident response controls.
-- Platform administrator: tightly restricted platform configuration.
+- Do multiple agency team members actually evaluate and purchase together?
+- Who can see an inquiry, order, license, or invoice?
+- Are purchases made personally, by a company, or both?
+- Is shared visibility sufficient, or are approval/budget controls needed?
+- Do creator studios need multiple collaborators?
+- What happens to access when a member leaves or a company relationship ends?
 
-An organization owner is not a Maketrail platform administrator. Avoid one all-powerful admin role for routine operations.
+If the first validated workflow is individual, keep organization workspaces out of the MVP and preserve the ability to add them later.
 
-## 7. Conceptual data implications
+## 7. Related documents
 
-If organization workspaces are validated, likely concepts include users, organizations, organization memberships, creator profiles, and explicit organization or buyer-context references on private workspace resources.
-
-Do not mechanically add an organization identifier to every table. Public catalog data, global taxonomies, platform moderation records, and marketplace-wide configuration do not automatically belong to a tenant.
-
-For every resource, document its owner/context, visibility, read/write/export permissions, membership-removal behavior, organization-deletion behavior, and audit/retention obligations.
-
-The database schema, row-level security strategy, and enforcement mechanism remain undecided.
-
-## 8. Isolation and test expectations
-
-Before organization features launch, test that:
-- A user with no membership cannot access an organization resource.
-- A member of Organization A cannot access Organization B's private resources.
-- Removed or suspended membership loses access promptly.
-- Role changes take effect on subsequent actions.
-- Users in multiple organizations cannot mix contexts.
-- Public endpoints expose only published public fields.
-- Creators can access only inquiries/orders they are authorized to fulfill.
-- Background jobs, exports, caches, and download links enforce the same boundaries.
-- Support/admin access is permissioned and audited.
-
-Use negative authorization tests, not only successful-path tests.
-
-## 9. What not to do yet
-
-- Do not implement database-per-tenant or schema-per-tenant isolation without a demonstrated requirement.
-- Do not build organization workspaces solely because agencies are the initial buyer hypothesis.
-- Do not assume every creator must be an organization.
-- Do not equate membership with product ownership, seller status, or payout eligibility.
-- Do not expose all organization purchases to every member without an explicit policy.
-- Do not select a database vendor or row-level security mechanism in this document.
-
-## 10. Validation questions
-
-Validate whether multiple people need to discover, evaluate, approve, or purchase together; who should see inquiries, orders, licenses, and invoices; whether purchases are personal or business purchases; whether agencies need shared collections or approvals; whether users act for multiple organizations; and whether creator studios need shared profiles and listings.
-
-If one person can complete the first validated workflow, organization workspaces may remain deferred while the domain model preserves a path to add them later.
-
-## 11. Related documents
-
-- [System design](system-design.md)
-- [Feature map](../features/feature-map.md)
+- [Architecture strategy](architecture-strategy.md)
+- [Domain model](domain-model.md)
 - [MVP scope](../product/mvp-scope.md)
 - [Threat model](threat-model.md)
-- [Risk register](risk-register.md)
