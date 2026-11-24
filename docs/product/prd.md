@@ -200,7 +200,9 @@ See [user journeys](user-journeys.md) for proposed end-to-end flows.
 
 ## 14. MVP boundary
 
-The MVP is not frozen. After validation, select:
+The MVP is not frozen. The detailed [MVP scope proposal](mvp-scope.md) separates the immediate concierge validation pilot from a conditional productized MVP. Neither is an approved engineering scope.
+
+After validation, select:
 - One buyer segment.
 - One or two high-frequency product categories.
 - One primary purchase/delivery model.
