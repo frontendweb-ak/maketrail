@@ -18,7 +18,9 @@
 ## Architecture
 - [Architecture overview](architecture/README.md)
 - [Proposed system design](architecture/system-design.md) — logical architecture; no stack selected
-- [Security baseline](architecture/security.md) — proposed controls requiring threat modeling
+- [Security baseline](architecture/security.md) — proposed security and operational controls
+- [Initial threat model](architecture/threat-model.md) — qualitative, not a security assessment
+- [Risk register](architecture/risk-register.md) — provisional risk ratings and launch gates
 
 ## Sprints
 - [Sprint planning](sprints/README.md)
