@@ -95,6 +95,8 @@ Do not choose a component framework or token implementation until the applicatio
 
 ## 9. Related documents
 
+- [Visual identity directions](visual-directions.md) — three concepts, comparative assessment, and a hybrid recommendation; not yet approved.
+
 - [Design foundations](foundations.md)
 - [Architecture strategy](../architecture/architecture-strategy.md)
 - [MVP scope](../product/mvp-scope.md)
