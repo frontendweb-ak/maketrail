@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.2  
+**Register version:** 1.3  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -323,6 +323,35 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; ticket creation validation, priority/severity rules, SLA policy, secure attachment handling, redaction, escalation, responsive behavior and exact design tokens remain to be specified.
 
+## 2.12 Standalone page mockup — Buyer Workspace: Account & Settings
+
+**Mockup ID:** `MT-BUY-ACC-001-v1`  
+**Parent screen ID:** `MT-BUY-ACC-001`  
+**Asset filename:** `a_clean_modern_saas_dashboard_ui_screenshot_for_ma.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop buyer account and settings overview.
+
+**Current source asset:** [Open Buyer Workspace Account & Settings mockup](sandbox:/mnt/data/a_clean_modern_saas_dashboard_ui_screenshot_for_ma.png)
+
+**Screen sections shown:**
+1. Buyer workspace shell with Account navigation active.
+2. Settings navigation for profile, security, organization, notifications, billing/payments and privacy/account actions.
+3. Profile summary and editable personal/contact fields.
+4. Organization and team membership summary.
+5. Security summary with password, two-factor authentication and login activity.
+6. Notification preference controls.
+7. Billing and payment method, invoices and billing details entry points.
+8. Privacy controls including data export and account deletion entry points.
+
+**Design review notes:**
+- This is a consolidated settings overview; sensitive workflows such as password changes, 2FA recovery, payment method management, tax details, data export and account deletion should use dedicated confirmation and verification flows.
+- Names, email addresses, phone numbers, company, location, verification marks, team size, 2FA state and payment method details shown are illustrative placeholders, not user data or implemented account states.
+- Do not imply that email, phone, identity or organization is verified without a real verification process and stored evidence. Never expose full payment credentials.
+- Organization membership and role changes require explicit authorization and clear impact messaging. Account deletion must explain effects on orders, licenses, financial records and legal retention before confirmation.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; field validation, security challenge flows, recovery, organization role permissions, billing provider behavior, notification defaults, data export/deletion lifecycle, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -405,6 +434,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-INQ-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-IMPL-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-BUY-SUP-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-BUY-ACC-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
