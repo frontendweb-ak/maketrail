@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.4  
+**Register version:** 1.5  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -380,6 +380,35 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; permission-aware navigation, earnings definitions, empty states, listing status transitions, responsive behavior, accessibility and exact design tokens remain to be specified.
 
+## 2.14 Standalone page mockup — Creator Studio: Products
+
+**Mockup ID:** `MT-CRT-PROD-001-v1`  
+**Parent screen ID:** `MT-CRT-PROD-001`  
+**Asset filename:** `a_clean_modern_web_dashboard_ui_for_maketrail_c.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator product management list and selected-product detail panel.
+
+**Current source asset:** [Open Creator Studio Products mockup](sandbox:/mnt/data/a_clean_modern_web_dashboard_ui_for_maketrail_c.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Products navigation active.
+2. Product summary metrics: all, published, in review and drafts.
+3. Product status tabs and add-new-product action.
+4. Search, category, technology and sort filters.
+5. Product table with title, description, category/technology, status and last-updated date.
+6. Selected product summary with listing completeness checklist.
+7. Review feedback panel.
+8. Quick actions to edit, preview, view analytics and duplicate a listing.
+
+**Design review notes:**
+- This is the creator's product portfolio management screen; product listing state is distinct from individual submission/review case history.
+- Product names, counts, categories, technology stacks, statuses, dates, completeness percentages and feedback are illustrative placeholders, not actual creator inventory or review outcomes.
+- A completeness score is a content-readiness aid, not an approval or verification score. Published status does not mean the software has been independently security-tested.
+- Duplicate actions must create a new draft with clearly defined handling for license, version, media, ownership declarations and unique listing identity; never duplicate an active entitlement or transaction.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; bulk actions, archive/delete rules, listing ownership, version lifecycle, review history, filter behavior, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -464,6 +493,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-SUP-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-ACC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-OVW-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-PROD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
