@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.8  
+**Register version:** 1.9  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -498,6 +498,34 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-ORD-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; refunds/cancellations/disputes, partial fulfilment, product-only orders, service-only orders, payment reversals, buyer acceptance, audit history, responsive behavior and exact design tokens remain to be specified.
 
+## 2.18 Standalone page mockup — Creator Studio: Services
+
+**Mockup ID:** `MT-CRT-SVC-001-v1`  
+**Parent screen ID:** `MT-CRT-SVC-001`  
+**Asset filename:** `a_wide_screenshot_of_a_modern_saas_dashboard_ui_fo.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator implementation-service catalogue and selected service detail.
+
+**Current source asset:** [Open Creator Studio Services mockup](sandbox:/mnt/data/a_wide_screenshot_of_a_modern_saas_dashboard_ui_fo.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Services navigation active.
+2. Summary metrics for active services, drafts, buyer requests and work in progress.
+3. Service status tabs and search/category/status/sort filters.
+4. Service list with category, delivery model, starting price, status and last-updated date.
+5. Selected service detail with description and deliverables.
+6. Starting price, estimated timeline and availability.
+7. Actions to edit, preview listing, view requests and pause service.
+
+**Design review notes:**
+- Services are separately offered implementation work, not automatically included in a product license or product purchase.
+- Service names, counts, prices, timelines, availability, deliverables and request volumes are illustrative placeholders, not real provider commitments or market prices.
+- “Starting price” must be accompanied by scope assumptions and exclusions; final pricing requires a quote or agreed offer. Estimated timelines are indicative until scope and capacity are confirmed.
+- Pausing a service should prevent new requests while preserving existing accepted agreements and their fulfilment obligations.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; service package/quote model, availability calendar, capacity limits, request eligibility, pausing behavior, existing agreement handling, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -586,6 +614,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-SUB-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-INQ-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-ORD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-SVC-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
