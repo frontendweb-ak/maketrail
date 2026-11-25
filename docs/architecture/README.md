@@ -7,6 +7,10 @@
 
 This directory captures system boundaries, major data flows, security requirements, and technical options for Maketrail. It is intended to support validation and future engineering decisions, not to authorize infrastructure procurement or implementation.
 
+## Readiness
+
+- [Architecture readiness assessment](readiness-assessment.md) — current readiness, required decisions, exit criteria, and work order. This is an index/control document; detailed requirements remain in their source documents.
+
 ## Documents
 
 - [Architecture strategy](architecture-strategy.md) — recommended product and technical architecture, trade-offs, and deferred decisions.
