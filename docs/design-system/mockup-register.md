@@ -349,7 +349,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Do not imply that email, phone, identity or organization is verified without a real verification process and stored evidence. Never expose full payment credentials.
 - Organization membership and role changes require explicit authorization and clear impact messaging. Account deletion must explain effects on orders, licenses, financial records and legal retention before confirmation.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-PROD-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; field validation, security challenge flows, recovery, organization role permissions, billing provider behavior, notification defaults, data export/deletion lifecycle, responsive behavior and exact design tokens remain to be specified.
 
 ## 2.13 Standalone page mockup — Creator Studio: Overview
@@ -377,7 +377,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Earnings must distinguish gross sales, platform fees, refunds, pending amounts and settled payouts. Never present a sample total as withdrawable balance.
 - Profile completion is a guidance indicator, not proof of identity, rights ownership, payout eligibility or creator verification.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** **APPROVED / FROZEN** — approved 2026-11-25.
 - Desktop only; permission-aware navigation, earnings definitions, empty states, listing status transitions, responsive behavior, accessibility and exact design tokens remain to be specified.
 
 ## 2.14 Standalone page mockup — Creator Studio: Products
@@ -493,7 +493,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-SUP-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-ACC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-OVW-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-CRT-PROD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-PROD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
