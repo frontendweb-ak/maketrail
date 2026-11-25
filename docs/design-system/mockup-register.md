@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 2.3  
+**Register version:** 2.4  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -648,6 +648,37 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** **APPROVED / FROZEN** — approved 2026-11-25.
 - Desktop only; tab-specific screens, re-authentication, 2FA recovery, session/device revocation, notification defaults, payout provider settings, integration scopes, privacy/export/deletion lifecycle, responsive behavior and exact design tokens remain to be specified.
 
+## 2.23 Standalone page mockup — Creator Studio: Team & Access
+
+**Mockup ID:** `MT-CRT-TEAM-001-v1`  
+**Parent screen ID:** `MT-CRT-TEAM-001`  
+**Asset filename:** `a_clean_modern_saas_dashboard_ui_for_maketrail_cr.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop optional studio workspace membership and role-management page.
+
+**Current source asset:** [Open Creator Studio Team & Access mockup](sandbox:/mnt/data/a_clean_modern_saas_dashboard_ui_for_maketrail_cr.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Team navigation active.
+2. Studio workspace identity, workspace type, member count and status.
+3. Workspace member table with email, role, access status, last active and actions.
+4. Member search and role filtering.
+5. Pending invitations with assigned role, inviter, expiry, resend and revoke actions.
+6. Role and permission descriptions for Owner, Admin, Product Manager, Finance and Contributor.
+7. Security/access explanation.
+8. Owner-only warning for ownership transfer and removal of the final owner.
+9. Invite member and workspace settings actions.
+
+**Design review notes:**
+- Team/workspace membership is optional. Individual creators must be able to publish and operate without creating an organization or adding members.
+- Workspace names, member identities, emails, counts, plan, roles, last-active timestamps and invitations are illustrative placeholders, not real accounts or a final role policy.
+- Roles shown are a proposal for review, not an approved permission matrix. Authorization must be enforced server-side at resource/action level; hiding UI controls is not security.
+- Ownership transfer, removing members, changing roles and revoking invitations require explicit confirmation, audit records and safeguards against orphaning a workspace. At least one authorized owner must remain.
+- Financial permissions should be narrowly scoped; a Finance role must not automatically gain access to unrelated product source code, private buyer conversations or workspace security settings.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; invitation acceptance, domain restrictions, role matrix, member removal, ownership transfer, audit log, billing seat rules, optional organization lifecycle, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -741,6 +772,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-VER-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-PROFILE-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-CRT-SET-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-TEAM-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
