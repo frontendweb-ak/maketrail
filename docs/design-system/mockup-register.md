@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 2.2  
+**Register version:** 2.3  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -617,6 +617,37 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; public/private field rules, profile slug, SEO metadata, social-link validation, portfolio moderation, preview accuracy, visibility states, responsive behavior and exact design tokens remain to be specified.
 
+## 2.22 Standalone page mockup — Creator Studio: Settings
+
+**Mockup ID:** `MT-CRT-SET-001-v1`  
+**Parent screen ID:** `MT-CRT-SET-001`  
+**Asset filename:** `a_clean_ui_dashboard_screenshot_in_a_light_purple.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator account settings overview.
+
+**Current source asset:** [Open Creator Studio Settings mockup](sandbox:/mnt/data/a_clean_ui_dashboard_screenshot_in_a_light_purple.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Settings navigation active.
+2. Settings tabs for account, security, notifications, billing/payouts, preferences and integrations.
+3. Account information and sign-in contact details.
+4. Account role and studio/workspace summary.
+5. Language, currency and time-zone preferences.
+6. Data and privacy actions: export data, privacy settings and delete account.
+7. Account-status summary with separate email, phone, identity, payout, rights and optional business checks.
+8. Security quick actions for password, two-factor authentication, device management and notification preferences.
+9. Connected application/integration entry points.
+
+**Design review notes:**
+- All names, emails, phone numbers, studio names, verification states and integration statuses visible in the concept are fictional placeholders and must not be copied into product seed data or implementation.
+- Account settings must distinguish personal account identity, creator profile, optional organization/studio membership, platform verification and payout-provider status.
+- Currency and time zone are display/preferences choices; changing them must not silently alter the currency or legal terms of an existing quote, order, invoice or payout.
+- Integration connections require explicit OAuth consent, narrow scopes, revocation controls and clear data-use explanations. A connected repository does not establish ownership of every listed product.
+- Account deletion/export and security changes require appropriate re-authentication, confirmation, retention explanations and auditable handling. Financial/legal records may have retention obligations.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; tab-specific screens, re-authentication, 2FA recovery, session/device revocation, notification defaults, payout provider settings, integration scopes, privacy/export/deletion lifecycle, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -709,6 +740,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-EARN-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-VER-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-PROFILE-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-SET-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
