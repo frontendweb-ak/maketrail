@@ -173,7 +173,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Summary metrics must be derived from authorized buyer-owned or buyer-accessible records; do not expose organization or other users' private transactions.
 - Recommendations must not imply personalized compatibility unless the buyer's stack/preferences and product compatibility data are actually available.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-BUY-IMPL-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; responsive navigation, empty states, permissions, data freshness, loading/error behavior, and exact design tokens remain to be specified.
 
 ## 2.7 Standalone page mockup — Buyer Workspace: My Orders
@@ -203,7 +203,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Product purchase and implementation service must remain distinguishable in order data and terms, even when displayed together in one buyer workflow.
 - Progress and delivery estimates must be sourced from an agreed implementation plan and provider updates; never fabricate completion percentages or dates.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** **APPROVED / FROZEN** — approved 2026-11-25.
 - Desktop only; order permissions, cancellation/refund/dispute states, status transitions, responsive behavior, empty/error/loading states, audit history, and exact design tokens remain to be specified.
 
 ## 2.8 Standalone page mockup — Buyer Workspace: My Products
@@ -373,7 +373,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-ORD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-PROD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-INQ-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
-| `MT-BUY-IMPL-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-BUY-IMPL-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
