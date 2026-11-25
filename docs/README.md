@@ -13,6 +13,7 @@
 - [Market validation plan](strategy/market-validation.md)
 - [Market validation operating kit](strategy/validation-operations.md) — anonymized fieldwork trackers, evidence templates, transaction outcomes, and privacy rules; no results prefilled
 - [Market validation outreach playbook](strategy/outreach-playbook.md) — prospect selection, ethical sourcing, outreach templates, screening, and privacy; no outreach claimed
+- [India validation prospect batch](strategy/india-prospect-batch.md) — preliminary agency leads and creator discovery channels; not contacted or qualified
 - [Business model](strategy/business-model.md) — proposed revenue and commercial model
 
 ## Features
