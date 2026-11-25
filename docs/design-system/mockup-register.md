@@ -406,7 +406,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - A completeness score is a content-readiness aid, not an approval or verification score. Published status does not mean the software has been independently security-tested.
 - Duplicate actions must create a new draft with clearly defined handling for license, version, media, ownership declarations and unique listing identity; never duplicate an active entitlement or transaction.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-SUB-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; bulk actions, archive/delete rules, listing ownership, version lifecycle, review history, filter behavior, responsive behavior and exact design tokens remain to be specified.
 
 ## 2.15 Standalone page mockup — Creator Studio: Submissions
@@ -436,7 +436,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Review stages and required evidence must be defined by operations policy. Technical review and rights review are separate dimensions; approval must not imply security certification or legal advice.
 - Withdrawal behavior must explain whether the creator can withdraw during each review stage and what happens to an already published listing or existing buyer entitlements.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** **APPROVED / FROZEN** — approved 2026-11-25.
 - Desktop only; reviewer identity/permissions, revision comparison, evidence uploads, feedback resolution, resubmission rules, withdrawal consequences, responsive behavior and exact design tokens remain to be specified.
 
 ## 3. Screen-to-mockup mapping
@@ -524,7 +524,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-ACC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-OVW-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-PROD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-CRT-SUB-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-SUB-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
