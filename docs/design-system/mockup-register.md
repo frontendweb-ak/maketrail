@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 0.8  
+**Register version:** 0.9  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -206,6 +206,34 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; order permissions, cancellation/refund/dispute states, status transitions, responsive behavior, empty/error/loading states, audit history, and exact design tokens remain to be specified.
 
+## 2.8 Standalone page mockup — Buyer Workspace: My Products
+
+**Mockup ID:** `MT-BUY-PROD-001-v1`  
+**Parent screen ID:** `MT-BUY-PROD-001`  
+**Asset filename:** `a_clean_modern_marketplace_ui_maketrail_buyer_wor.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop buyer product library.
+
+**Current source asset:** [Open Buyer Workspace My Products mockup](sandbox:/mnt/data/a_clean_modern_marketplace_ui_maketrail_buyer_wor.png)
+
+**Screen sections shown:**
+1. Buyer workspace shell with My Products navigation active.
+2. Library summary metrics: total products, active licenses, implementation projects and available updates.
+3. Product state tabs: all, active, in implementation and archived.
+4. Grid/list view affordance.
+5. Product cards with preview, product/creator identity, license version/update metadata and status.
+6. Contextual actions: Open, Resources, View Progress, View Update and Changelog.
+
+**Design review notes:**
+- This is a new buyer-surface screen for accessing acquired software and related resources.
+- The product library is distinct from the order history: it represents access/entitlements and current product versions, not the original transaction record.
+- Sample product names, creator names, product counts, license counts, implementation counts, version numbers, dates, update states and progress percentages are illustrative placeholders, not real buyer entitlements or release data.
+- Access must be derived from a valid entitlement and checked server-side for every product artifact/resource. A visible library card alone must never grant access.
+- Updates must respect the buyer's purchased license terms and supported version policy; do not imply lifetime updates unless that entitlement was explicitly purchased.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; entitlement/expiry states, revoked/refunded access, update compatibility, download security, empty/error/loading states, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -284,6 +312,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-OPS-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-BUY-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-ORD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-BUY-PROD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
