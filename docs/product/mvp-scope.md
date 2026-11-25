@@ -1,8 +1,8 @@
 # Maketrail MVP scope proposal
 
-**Status:** Proposed scope — not approved or frozen  
-**Version:** 0.1  
-**Last updated:** 2026-11-24  
+**Status:** Active MVP definition draft — not approved or frozen  
+**Version:** 0.2  
+**Last updated:** 2026-11-25  
 **Decision owner:** Product (to be assigned)
 
 ## 1. Executive summary
@@ -224,17 +224,63 @@ Separate actual results from targets, estimates, and expressions of interest.
 - Verification scope and available reviewer capability.
 - Support capacity and incident ownership.
 
-## 11. Recommendation and next step
+## 11. Current working direction — MVP definition and architecture discovery
 
-**Recommendation:** start with the concierge validation pilot. Keep the productized MVP above as a conditional target, not an approved build plan.
+**Status of this direction:** proposed working approach; not a final product, architecture, or launch approval.
 
-After the pilot, produce an evidence report and explicitly choose one of:
-- Proceed with a narrow productized MVP.
-- Continue concierge operations while refining the wedge.
-- Change buyer segment/category or transaction model.
-- Stop if demand, rights, compliance, or economics do not support the model.
+The project is moving from research preparation into bounded MVP definition and architecture discovery. The 30-day interview and transaction targets remain useful validation goals, but completing every target is not a prerequisite to define the MVP, begin reversible architecture discovery, or prepare implementation specifications.
 
-Only after a proceed decision should the team create detailed feature specifications, technical implementation tasks, and engineering sprint plans.
+Do not confuse these milestones:
+- **MVP definition:** decide the smallest coherent buyer/creator/operator workflow and its acceptance criteria.
+- **Architecture discovery:** map domains, data, permissions, trust boundaries, integration constraints, and compare reversible technology options.
+- **Architecture freeze:** approve the consequential technical and operational decisions required for implementation.
+- **Public launch readiness:** satisfy legal, payment, security, support, privacy, recovery, and operational requirements for the actual launch scope.
+
+### Working release shape to evaluate
+
+The following is a starting proposal for product-definition review, not an approved scope:
+
+**Core first-release workflow**
+1. Public visitor discovers a small, curated set of genuinely reviewed product listings.
+2. Visitor evaluates a product detail page with creator, version, compatibility claims, license, price/quote basis, delivery, support, limitations, and accurately scoped trust information.
+3. Buyer submits a product-specific inquiry or request; no custom checkout is assumed.
+4. Creator submits a listing for review and can respond to authorized inquiries.
+5. Operations reviews rights/licensing declarations, controls publication, handles inquiries, and records moderation/support actions.
+6. Buyer and creator can follow the inquiry and agreed next steps through a controlled, auditable workflow.
+
+**Conditional capabilities**
+- Buyer account and inquiry history, if anonymous inquiry plus secure follow-up is insufficient.
+- Order records, license snapshots, entitlements, and delivery access if the initial acquisition model requires them.
+- Provider-hosted checkout only after seller/merchant responsibilities, launch jurisdictions, provider eligibility, refunds, disputes, and payout flow are reviewed and approved.
+- Platform-managed artifact storage/downloads only if a real creator/buyer workflow requires them and safe storage, scanning, access control, and takedown operations are designed.
+
+**Not required merely to call the release an MVP**
+- Wallet, escrow, platform-held funds, complex payout orchestration.
+- Native mobile applications, real-time chat, AI matching, advanced recommendations.
+- Enterprise organizations, team approvals, private catalogs, SSO.
+- Automated code execution or automated security certification.
+- Broad creator analytics, subscriptions, coupons, and complex service project management.
+
+### Validation proportionality
+
+Before implementation authorization, seek enough evidence to establish:
+- At least one concrete buyer problem and a credible first use case.
+- A small number of real product candidates with credible ownership and license paths.
+- A feasible, clearly disclosed acquisition/fulfillment approach for the first release.
+- A reachable operational owner for listing review, support, refunds/disputes if applicable, and takedowns.
+
+This is a minimum evidence bar, not a claim that these conditions are already met. The proposed 15 buyer interviews, 20 creator interviews, 10 founding creators, 20 product candidates, 3 paid purchases, and 2 integrations remain experiment targets, not mandatory MVP entry criteria.
+
+### Immediate sequence
+
+1. Approve or revise the first-release workflow and exclusions.
+2. Reconcile that workflow against the existing mockup register; only screens needed by the selected workflow receive implementation specifications.
+3. Complete the resource/action permission matrix and state transitions for the selected workflows.
+4. Conduct architecture discovery for the selected flows: domain boundaries, data ownership, external integrations, trust boundaries, failure handling, and operational requirements.
+5. Resolve launch-market, contracting/seller, payment, privacy, and support constraints before freezing affected capabilities.
+6. Approve the MVP scope and architecture decisions explicitly before coding.
+
+No application implementation, production stack selection, infrastructure procurement, or payment-provider commitment is authorized by this working direction.
 
 ## 12. Related documents
 
