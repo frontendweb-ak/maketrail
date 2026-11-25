@@ -60,7 +60,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Product names, category counts, ratings, download counts, prices, and claims are sample content for layout exploration. They are not validated marketplace inventory or real performance evidence.
 - The image represents a desktop concept only. Responsive tablet/mobile layouts, menu behavior, search states, loading/empty/error states, accessibility checks, and exact design tokens remain to be specified.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-MKT-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 
 ## 3. Screen-to-mockup mapping
 
@@ -127,8 +127,8 @@ The image is a direction-setting concept. It does not establish exact color valu
 
 - Initial four-screen concept set: **COMPLETED** as a concept baseline (`MT-VIS-001`).
 - Consolidated reference board: **COMPLETED** as a second visual reference (`MT-BOARD-002`).
-- Design freeze: **NOT FROZEN** — visual direction is established for exploration, but the individual screens and exact tokens have not been approved.
-- Implementation readiness: **NOT READY** — screen-level refinement, responsive specifications, interaction states, and token approval remain required.
+- Design freeze: **PARTIALLY FROZEN** — `MT-MKT-001-v1` is approved and frozen as the Marketplace Home desktop visual reference; the remaining three screens and shared design tokens are not frozen.
+- Implementation readiness: **NOT READY** — the approved desktop mockup is the visual target, but responsive specifications, interaction states, accessible behavior, and token extraction still remain before implementation.
 
 ## 7. Approval status
 
