@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 2.1  
+**Register version:** 2.2  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -585,6 +585,38 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-VER-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; KYC/KYB provider, required jurisdictions, evidence retention/deletion, manual review, payout eligibility, rights review, appeal/correction, privacy notices, responsive behavior and exact design tokens remain to be specified.
 
+## 2.21 Standalone page mockup — Creator Studio: Profile & Public Storefront
+
+**Mockup ID:** `MT-CRT-PROFILE-001-v1`  
+**Parent screen ID:** `MT-CRT-PROFILE-001`  
+**Asset filename:** `a_clean_modern_saas_dashboard_ui_screenshot_maket.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator profile editor with buyer-facing public profile preview.
+
+**Current source asset:** [Open Creator Studio Profile mockup](sandbox:/mnt/data/a_clean_modern_saas_dashboard_ui_screenshot_maket.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Profile navigation active.
+2. Profile completion indicator and checklist.
+3. Creator identity, studio name/logo, tagline, location/remote availability and website.
+4. Creator type, experience and specialist technology tags.
+5. About section with edit action.
+6. Portfolio projects with screenshots, summaries and technology tags.
+7. Expertise and preferred engagement types.
+8. Buyer-facing public profile preview with storefront visibility control.
+9. Public identity/verification indicator, response-time display, published product/service counts and buyer actions.
+10. Social links and profile quality checklist.
+
+**Design review notes:**
+- Profile completion is a content-readiness aid, not proof of creator identity, rights ownership, service quality or platform verification.
+- Creator names, logos, website, response time, published counts, project examples, technologies and verification states are illustrative placeholders, not real creator claims.
+- “Identity check complete” must only appear when the relevant verification process has completed; it must not be described or styled as code-quality certification.
+- Public storefront visibility must have clear consequences and must not expose private contact details, draft listings, private portfolio material or account-only data.
+- Portfolio projects require rights to publish all screenshots, client names, logos and case-study information; confidential customer material must remain private or redacted.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; public/private field rules, profile slug, SEO metadata, social-link validation, portfolio moderation, preview accuracy, visibility states, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -676,6 +708,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-SVC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-EARN-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-VER-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-PROFILE-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
