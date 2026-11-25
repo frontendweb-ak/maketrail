@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 2.4  
+**Register version:** 2.5  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -679,6 +679,34 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; invitation acceptance, domain restrictions, role matrix, member removal, ownership transfer, audit log, billing seat rules, optional organization lifecycle, responsive behavior and exact design tokens remain to be specified.
 
+## 2.24 Standalone page mockup — Creator Studio: Product Analytics
+
+**Mockup ID:** `MT-CRT-ANL-001-v1`  
+**Parent screen ID:** `MT-CRT-ANL-001`  
+**Asset filename:** `maketrail_creator_product_analytics_mockup.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator product-performance analytics dashboard.
+
+**Current source asset:** [Open Creator Studio Product Analytics mockup](sandbox:/mnt/data/maketrail_creator_product_analytics_mockup.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Products navigation active.
+2. Product selector, published-products filter, comparison affordance and date-range selector.
+3. KPI cards for product views, product clicks, completed orders and conversion rate.
+4. Discovery-to-purchase trend chart for views, clicks and orders.
+5. Conversion funnel from product views through clicks and checkout to completed orders.
+6. Top-performing products table with views, clicks, orders, conversion and refund rate.
+
+**Design review notes:**
+- All product names, counts, percentages and trends are illustrative sample data, not real marketplace performance or forecasts.
+- Define analytics events and denominators before implementation. Views, unique visitors, clicks, checkout starts, paid orders, cancellations and refunds must have stable definitions, deduplication rules and attribution windows.
+- Conversion rates must state their denominator and date range. Do not combine product views and unique visitors or count payment attempts as completed orders.
+- Financial settlement and creator earnings belong in the separate Earnings & Payouts screen; this page reports product performance, not withdrawable balances.
+- Analytics visibility must follow product/workspace permissions. Do not expose buyer personal data or cross-creator performance.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; event taxonomy, timezone/date boundaries, comparison behavior, attribution, refunds/chargebacks treatment, export permissions, empty states, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -773,6 +801,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-PROFILE-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-CRT-SET-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-TEAM-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-ANL-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
