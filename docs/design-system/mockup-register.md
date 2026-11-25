@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 0.3  
+**Register version:** 0.4  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -61,6 +61,35 @@ This board consolidates the four existing screen IDs and introduces visual token
 - The image represents a desktop concept only. Responsive tablet/mobile layouts, menu behavior, search states, loading/empty/error states, accessibility checks, and exact design tokens remain to be specified.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
 - **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-MKT-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
+
+## 2.3 Standalone page mockup — Product Detail
+
+**Mockup ID:** `MT-PDP-001-v1`  
+**Parent screen ID:** `MT-PDP-001`  
+**Asset filename:** `a_clean_modern_high_detail_ui_mockup_of_maketrai.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop product detail page concept.
+
+**Current source asset:** [Open Product Detail standalone mockup](sandbox:/mnt/data/a_clean_modern_high_detail_ui_mockup_of_maketrai.png)
+
+**Screen sections shown:**
+1. Global public navigation and breadcrumb trail.
+2. Product media gallery with preview and demo affordance.
+3. Product identity, summary, indicative rating/download metadata, price and license label.
+4. Primary purchase and secondary implementation actions.
+5. Product assurances and support/licensing summary.
+6. Overview, features, technical details, license and reviews tabs.
+7. Creator profile and marketplace trust panel.
+8. Feature highlights and technology stack.
+
+**Design review notes:**
+- This is the standalone refinement of the top-right quadrant in `MT-VIS-001`.
+- The hierarchy emphasizes product evaluation before purchase: preview, fit, license, creator and support context are visible together.
+- Product name, rating, review count, download count, price, license, update promise, support duration, verification marker, and trust claims are illustrative placeholders. They must not become real claims without evidence, defined policy, and operational capability.
+- The “verified” visual treatment must only be used when a corresponding verification process and evidence record exist; a creator identity or listing approval is not equivalent to code-quality certification.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; responsive behavior, tab interaction, gallery states, checkout/inquiry states, accessibility, and exact design tokens remain to be specified.
 
 ## 3. Screen-to-mockup mapping
 
@@ -135,7 +164,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | Mockup ID | Current status | Next action |
 |---|---|---|
 | `MT-MKT-001` | Concept only | Refine and review Marketplace Home |
-| `MT-PDP-001` | Concept only | Refine and review Product Detail |
+| `MT-PDP-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-CRT-001` | Concept only | Refine and review Creator Studio |
 | `MT-OPS-001` | Concept only | Refine and review Operations Console |
 
