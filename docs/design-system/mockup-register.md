@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 0.6  
+**Register version:** 0.7  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -147,6 +147,35 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-OPS-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; role permissions, reviewer audit trail, evidence viewing, decision confirmation, escalation, responsive behavior, accessibility, and exact design tokens remain to be specified.
 
+## 2.6 Standalone page mockup — Buyer Workspace: Overview
+
+**Mockup ID:** `MT-BUY-001-v1`  
+**Parent screen ID:** `MT-BUY-001`  
+**Asset filename:** `a_clean_modern_ui_dashboard_screenshot_for_maketra.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop authenticated buyer workspace overview.
+
+**Current source asset:** [Open Buyer Workspace standalone mockup](sandbox:/mnt/data/a_clean_modern_ui_dashboard_screenshot_for_maketra.png)
+
+**Screen sections shown:**
+1. Buyer workspace shell, global search, notifications and account controls.
+2. Buyer navigation: Overview, Inquiries, Orders, My Products, Implementation, Support and Account.
+3. Summary metrics for open inquiries, active orders, products in library and implementation projects.
+4. Recent activity across inquiries, orders and implementation requests.
+5. Contextual pending actions with direct links to the relevant workflow.
+6. Stack-relevant product recommendations.
+7. Implementation services discovery call-to-action.
+
+**Design review notes:**
+- This is a new buyer-surface screen, extending the four initial representative concepts into the authenticated buyer journey.
+- The overview is task-oriented: it surfaces pending work and recent transaction activity rather than acting as a generic analytics dashboard.
+- User name, counts, product names, activity, order references, statuses, prices and recommendations are illustrative placeholders. They are not real buyer data or validated recommendations.
+- Summary metrics must be derived from authorized buyer-owned or buyer-accessible records; do not expose organization or other users' private transactions.
+- Recommendations must not imply personalized compatibility unless the buyer's stack/preferences and product compatibility data are actually available.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; responsive navigation, empty states, permissions, data freshness, loading/error behavior, and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -223,6 +252,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-PDP-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-OPS-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-BUY-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 No screen in this register is currently approved as a pixel-perfect implementation reference.
 
