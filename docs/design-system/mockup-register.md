@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.1  
+**Register version:** 1.2  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -293,6 +293,36 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; milestone editing, task ownership, file permissions, change requests, delayed/blocked states, buyer/provider communication rules, responsive behavior and exact design tokens remain to be specified.
 
+## 2.11 Standalone page mockup — Buyer Workspace: Support Center
+
+**Mockup ID:** `MT-BUY-SUP-001-v1`  
+**Parent screen ID:** `MT-BUY-SUP-001`  
+**Asset filename:** `a_clean_modern_ui_dashboard_screenshot_white_lig.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop buyer support request and ticket conversation view.
+
+**Current source asset:** [Open Buyer Workspace Support Center mockup](sandbox:/mnt/data/a_clean_modern_ui_dashboard_screenshot_white_lig.png)
+
+**Screen sections shown:**
+1. Buyer workspace shell with Support navigation active.
+2. Support metrics: open tickets, awaiting buyer reply and resolved requests.
+3. Support request filters and searchable ticket list.
+4. Selected ticket conversation with message history and attachments.
+5. Ticket tabs for conversation, attachments and activity.
+6. Related product and order context.
+7. Support scope and entitlement summary.
+8. Helpful documentation and support resources.
+9. Reply composer and create-support-request action.
+
+**Design review notes:**
+- This screen is for post-purchase help with product access, licensing, downloads and separately agreed implementation support.
+- Sample ticket IDs, products, order references, messages, timestamps, attachment names, support coverage and status counts are illustrative placeholders, not actual tickets or policy commitments.
+- Support eligibility, duration, response expectations and included/excluded work must come from the buyer's actual license or service agreement. Do not hard-code the sample “90 days” or imply implementation support is included by default.
+- Attachments and logs must warn users not to submit passwords, tokens, private keys, personal data or production secrets. Access to tickets and files is restricted to authorized participants and support staff.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; ticket creation validation, priority/severity rules, SLA policy, secure attachment handling, redaction, escalation, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -374,6 +404,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-PROD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-INQ-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-IMPL-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-BUY-SUP-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
