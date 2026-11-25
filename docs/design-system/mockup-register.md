@@ -115,7 +115,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Example product text and technology selections are illustrative content, not a real creator submission or approved field specification.
 - The four-step sequence is a proposed workflow; required rights declarations, licensing details, versioning, compatibility, documentation, media, support terms and review requirements need product-policy validation.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; responsive sidebar behavior, form validation, draft persistence, upload handling, step navigation, accessibility, and exact design tokens remain to be specified.
 
 ## 3. Screen-to-mockup mapping
@@ -183,7 +183,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 
 - Initial four-screen concept set: **COMPLETED** as a concept baseline (`MT-VIS-001`).
 - Consolidated reference board: **COMPLETED** as a second visual reference (`MT-BOARD-002`).
-- Design freeze: **PARTIALLY FROZEN** — `MT-MKT-001-v1` and `MT-PDP-001-v1` are approved and frozen as desktop visual references; the remaining two screens and shared design tokens are not frozen.
+- Design freeze: **PARTIALLY FROZEN** — `MT-MKT-001-v1`, `MT-PDP-001-v1`, and `MT-CRT-001-v1` are approved and frozen as desktop visual references; the remaining screen and shared design tokens are not frozen.
 - Implementation readiness: **NOT READY** — the approved desktop mockup is the visual target, but responsive specifications, interaction states, accessible behavior, and token extraction still remain before implementation.
 
 ## 7. Approval status
@@ -192,7 +192,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 |---|---|---|
 | `MT-MKT-001` | Concept only | Refine and review Marketplace Home |
 | `MT-PDP-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-CRT-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-OPS-001` | Concept only | Refine and review Operations Console |
 
 No screen in this register is currently approved as a pixel-perfect implementation reference.
