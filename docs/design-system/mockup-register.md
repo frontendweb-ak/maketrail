@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 0.2  
+**Register version:** 0.3  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -36,6 +36,31 @@ A mockup ID identifies a screen concept, not a route contract or a promise that 
 **Current source asset:** [Open consolidated reference board](sandbox:/mnt/data/a_clean_flat_maketrail_design_reference_final.png)
 
 This board consolidates the four existing screen IDs and introduces visual token suggestions. The generated token values and typography shown in the board are **conceptual proposals only**; they are not approved design-system tokens. The board's “Final” label is artwork text, not an approval status. The screen approval statuses below remain unchanged until explicit review and approval.
+
+## 2.2 Standalone page mockup — Marketplace Home
+
+**Mockup ID:** `MT-MKT-001-v1`  
+**Parent screen ID:** `MT-MKT-001`  
+**Asset filename:** `a_high_quality_ui_screenshot_of_maketrail_marketpl.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop public marketplace homepage concept.
+
+**Current source asset:** [Open Marketplace Home standalone mockup](sandbox:/mnt/data/a_high_quality_ui_screenshot_of_maketrail_marketpl.png)
+
+**Screen sections shown:**
+1. Global public navigation and account actions.
+2. Hero proposition, primary search, and popular topic shortcuts.
+3. Marketplace trust/value proposition strip.
+4. Category discovery.
+5. Featured solution cards with preview, summary, indicative price, license type, and category tags.
+
+**Design review notes:**
+- This is the first page-by-page standalone refinement and supersedes the top-left quadrant of `MT-VIS-001` as the current Marketplace Home visual reference.
+- The visual direction follows the hybrid editorial-tech proposal: editorial hero, technical marketplace language, and structured commerce cards.
+- Product names, category counts, ratings, download counts, prices, and claims are sample content for layout exploration. They are not validated marketplace inventory or real performance evidence.
+- The image represents a desktop concept only. Responsive tablet/mobile layouts, menu behavior, search states, loading/empty/error states, accessibility checks, and exact design tokens remain to be specified.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 
 ## 3. Screen-to-mockup mapping
 
