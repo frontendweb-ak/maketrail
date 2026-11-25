@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 2.0  
+**Register version:** 2.1  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -557,6 +557,34 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-EARN-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; accounting definitions, currency conversion, tax documents, refunds/chargebacks, payout failures/holds, provider reconciliation, permissions, responsive behavior and exact design tokens remain to be specified.
 
+## 2.20 Standalone page mockup — Creator Studio: Verification & Trust
+
+**Mockup ID:** `MT-CRT-VER-001-v1`  
+**Parent screen ID:** `MT-CRT-VER-001`  
+**Asset filename:** `a_crisp_clean_modern_saas_dashboard_ui_screensho.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator identity, payout, business and rights verification overview.
+
+**Current source asset:** [Open Creator Studio Verification & Trust mockup](sandbox:/mnt/data/a_crisp_clean_modern_saas_dashboard_ui_screensho.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Verification navigation active.
+2. Separate profile, payout and business verification status cards.
+3. Verification checklist for identity, contact, business details, payout account and rights/ownership declarations.
+4. Evidence/document upload area with accepted file types and privacy guidance.
+5. “How verification works” process explanation.
+6. Verification activity timeline.
+7. Continue verification and view requirements actions.
+
+**Design review notes:**
+- Identity verification, payout-provider verification, business verification and product rights/ownership declarations are separate checks with separate purposes, evidence and status. They must not be collapsed into a single generic “verified creator” badge.
+- Creator identity or business verification does not establish product code quality, security, legal compliance or production readiness. The UI explicitly communicates this limitation.
+- Statuses, document types, file limits, review steps and sample activity are conceptual placeholders pending policy, provider and legal decisions. Do not request identity documents until the platform has a lawful purpose, secure processor/storage, retention policy and access controls.
+- Rights declarations are product/listing-specific and require evidence/attestation appropriate to the claim; identity verification alone is not proof of software ownership.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; KYC/KYB provider, required jurisdictions, evidence retention/deletion, manual review, payout eligibility, rights review, appeal/correction, privacy notices, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -647,6 +675,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-ORD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-SVC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-EARN-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-VER-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
