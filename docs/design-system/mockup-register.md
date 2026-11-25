@@ -231,7 +231,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Access must be derived from a valid entitlement and checked server-side for every product artifact/resource. A visible library card alone must never grant access.
 - Updates must respect the buyer's purchased license terms and supported version policy; do not imply lifetime updates unless that entitlement was explicitly purchased.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-BUY-ACC-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; entitlement/expiry states, revoked/refunded access, update compatibility, download security, empty/error/loading states, responsive behavior and exact design tokens remain to be specified.
 
 ## 2.9 Standalone page mockup — Buyer Workspace: Inquiries
@@ -261,7 +261,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - A quote must have explicit scope, price/currency, validity, deliverables, exclusions, provider identity and acceptance state. “Convert to Order” must only be available when a valid quote/offer is accepted and the transaction terms are recorded.
 - Message and attachment access must be limited to authorized inquiry participants and platform operators with an appropriate support/moderation reason.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** **APPROVED / FROZEN** — approved 2026-11-25.
 - Desktop only; unread/read states, message delivery failures, attachments, quote expiry/revision, inquiry closure, participant permissions, responsive behavior, and exact design tokens remain to be specified.
 
 ## 2.10 Standalone page mockup — Buyer Workspace: Implementation
@@ -434,7 +434,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-INQ-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-IMPL-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-BUY-SUP-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
-| `MT-BUY-ACC-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-BUY-ACC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
