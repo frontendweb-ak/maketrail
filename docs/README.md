@@ -18,6 +18,7 @@
 - [Feature specification guide](features/README.md)
 
 ## Architecture
+- [Architecture readiness assessment](architecture/readiness-assessment.md) — decision/evidence checklist before architecture freeze
 - [Architecture overview](architecture/README.md)
 - [Architecture strategy](architecture/architecture-strategy.md) — recommended direction and trade-offs; no technology stack selected
 - [Conceptual domain model](architecture/domain-model.md) — proposed entities, relationships, ownership, and lifecycle invariants
