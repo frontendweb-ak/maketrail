@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 0.4  
+**Register version:** 0.5  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -91,6 +91,33 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-PDP-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; responsive behavior, tab interaction, gallery states, checkout/inquiry states, accessibility, and exact design tokens remain to be specified.
 
+## 2.4 Standalone page mockup — Creator Studio: Product Publishing
+
+**Mockup ID:** `MT-CRT-001-v1`  
+**Parent screen ID:** `MT-CRT-001`  
+**Asset filename:** `a_clean_modern_dashboard_ui_for_maketrail_creator.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator workspace page, first step of product publishing.
+
+**Current source asset:** [Open Creator Studio standalone mockup](sandbox:/mnt/data/a_clean_modern_dashboard_ui_for_maketrail_creator.png)
+
+**Screen sections shown:**
+1. Creator Studio top bar and account controls.
+2. Creator navigation sidebar with product, order, implementation, earnings, verification, profile and team areas.
+3. Four-step publishing progress: Basic Info, Product Details, Pricing & License, Support & Publish.
+4. Basic product information form: name, short description, category and primary technology tags.
+5. Contextual publishing tips panel.
+6. Save as Draft and Continue to Product Details actions.
+
+**Design review notes:**
+- This is the standalone refinement of the bottom-left quadrant in `MT-VIS-001`.
+- The screen intentionally uses a creator-focused workspace shell distinct from public marketplace navigation.
+- Example product text and technology selections are illustrative content, not a real creator submission or approved field specification.
+- The four-step sequence is a proposed workflow; required rights declarations, licensing details, versioning, compatibility, documentation, media, support terms and review requirements need product-policy validation.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; responsive sidebar behavior, form validation, draft persistence, upload handling, step navigation, accessibility, and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -165,7 +192,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 |---|---|---|
 | `MT-MKT-001` | Concept only | Refine and review Marketplace Home |
 | `MT-PDP-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-CRT-001` | Concept only | Refine and review Creator Studio |
+| `MT-CRT-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-OPS-001` | Concept only | Refine and review Operations Console |
 
 No screen in this register is currently approved as a pixel-perfect implementation reference.
