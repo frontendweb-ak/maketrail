@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.0  
+**Register version:** 1.1  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -264,6 +264,35 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; unread/read states, message delivery failures, attachments, quote expiry/revision, inquiry closure, participant permissions, responsive behavior, and exact design tokens remain to be specified.
 
+## 2.10 Standalone page mockup — Buyer Workspace: Implementation
+
+**Mockup ID:** `MT-BUY-IMPL-001-v1`  
+**Parent screen ID:** `MT-BUY-IMPL-001`  
+**Asset filename:** `a_clean_modern_web_ui_dashboard_in_white_and_soft.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop buyer implementation-project overview.
+
+**Current source asset:** [Open Buyer Workspace Implementation mockup](sandbox:/mnt/data/a_clean_modern_web_ui_dashboard_in_white_and_soft.png)
+
+**Screen sections shown:**
+1. Buyer workspace shell with Implementation navigation active.
+2. Summary metrics for active projects, in-progress, completed and at-risk projects.
+3. Project status tabs and request-implementation action.
+4. Searchable implementation project list with creator, status, progress and due date.
+5. Selected project overview with order reference and workflow tabs for overview, tasks, files, communication and updates.
+6. Project progress timeline with milestones from order confirmation through go-live.
+7. Current phase checklist and recent activity feed.
+8. Project team and buyer next-action panel.
+
+**Design review notes:**
+- This is a buyer-side view of separately agreed implementation work, not a claim that every product purchase includes implementation.
+- Example project names, creators, order IDs, progress percentages, dates, milestones, activity and checklist states are illustrative placeholders, not real delivery commitments.
+- Project progress and due dates must be derived from an agreed scope, milestone plan and authorized provider updates. Avoid fabricated percentages or implied guarantees.
+- Implementation service scope, deliverables, acceptance criteria, change requests, payment terms and dispute handling must be explicit and distinct from the product license/order.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; milestone editing, task ownership, file permissions, change requests, delayed/blocked states, buyer/provider communication rules, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -344,6 +373,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-ORD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-PROD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-INQ-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-BUY-IMPL-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
