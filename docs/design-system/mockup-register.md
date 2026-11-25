@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.3  
+**Register version:** 1.4  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -352,6 +352,34 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; field validation, security challenge flows, recovery, organization role permissions, billing provider behavior, notification defaults, data export/deletion lifecycle, responsive behavior and exact design tokens remain to be specified.
 
+## 2.13 Standalone page mockup — Creator Studio: Overview
+
+**Mockup ID:** `MT-CRT-OVW-001-v1`  
+**Parent screen ID:** `MT-CRT-OVW-001`  
+**Asset filename:** `a_clean_modern_saas_dashboard_ui_for_maketrail_cr.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator workspace overview.
+
+**Current source asset:** [Open Creator Studio Overview mockup](sandbox:/mnt/data/a_clean_modern_saas_dashboard_ui_for_maketrail_cr.png)
+
+**Screen sections shown:**
+1. Creator Studio shell and creator-specific navigation.
+2. Summary metrics for published products, pending reviews, buyer inquiries and monthly earnings.
+3. Creator product list with category, listing status and last-updated date.
+4. Creator profile completion checklist.
+5. Action-required review feedback card.
+6. Recent product, inquiry and order activity.
+7. Creator education and policy resources.
+
+**Design review notes:**
+- This is the creator's operational home: it prioritizes listing status, buyer demand, required actions and publishing guidance over generic analytics.
+- Product names, counts, inquiry volume, earnings, profile completion, creator identity, activity and dates are illustrative placeholders, not real creator performance or financial data.
+- Earnings must distinguish gross sales, platform fees, refunds, pending amounts and settled payouts. Never present a sample total as withdrawable balance.
+- Profile completion is a guidance indicator, not proof of identity, rights ownership, payout eligibility or creator verification.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; permission-aware navigation, earnings definitions, empty states, listing status transitions, responsive behavior, accessibility and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -435,6 +463,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-IMPL-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-BUY-SUP-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-ACC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-OVW-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
