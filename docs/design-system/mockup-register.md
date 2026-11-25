@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.5  
+**Register version:** 1.6  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -409,6 +409,36 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; bulk actions, archive/delete rules, listing ownership, version lifecycle, review history, filter behavior, responsive behavior and exact design tokens remain to be specified.
 
+## 2.15 Standalone page mockup — Creator Studio: Submissions
+
+**Mockup ID:** `MT-CRT-SUB-001-v1`  
+**Parent screen ID:** `MT-CRT-SUB-001`  
+**Asset filename:** `a_clean_modern_saas_dashboard_ui_screenshot_for.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator submission review and feedback workspace.
+
+**Current source asset:** [Open Creator Studio Submissions mockup](sandbox:/mnt/data/a_clean_modern_saas_dashboard_ui_screenshot_for.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Submissions navigation active.
+2. Submission summary metrics: all, in review, action required and approved.
+3. Submission status tabs and filters for product, category, status and date.
+4. Submission table with product, submission ID, submitted date, version, review stage, status and last update.
+5. Selected submission detail with product/version/category and submission date.
+6. Review progress timeline from submission through initial review, technical/rights review and decision.
+7. Reviewer feedback with requested corrections.
+8. Actions to view submission, update and resubmit, or withdraw.
+9. Submission activity timeline.
+
+**Design review notes:**
+- A submission is a versioned review case, distinct from the creator's canonical product listing. Resubmission should preserve prior review history and link the new submitted version to the same case or a clearly traceable revision.
+- Sample submission IDs, product names, versions, reviewer feedback, dates, counts and statuses are illustrative placeholders, not actual review decisions or policy.
+- Review stages and required evidence must be defined by operations policy. Technical review and rights review are separate dimensions; approval must not imply security certification or legal advice.
+- Withdrawal behavior must explain whether the creator can withdraw during each review stage and what happens to an already published listing or existing buyer entitlements.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; reviewer identity/permissions, revision comparison, evidence uploads, feedback resolution, resubmission rules, withdrawal consequences, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -494,6 +524,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-ACC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-OVW-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-PROD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-SUB-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
