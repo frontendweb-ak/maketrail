@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 0.5  
+**Register version:** 0.6  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -118,6 +118,35 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; responsive sidebar behavior, form validation, draft persistence, upload handling, step navigation, accessibility, and exact design tokens remain to be specified.
 
+## 2.5 Standalone page mockup — Operations Console: Listing Review
+
+**Mockup ID:** `MT-OPS-001-v1`  
+**Parent screen ID:** `MT-OPS-001`  
+**Asset filename:** `a_clean_modern_web_dashboard_ui_maketrail_operat.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop operations listing-review workspace.
+
+**Current source asset:** [Open Operations Console standalone mockup](sandbox:/mnt/data/a_clean_modern_web_dashboard_ui_maketrail_operat.png)
+
+**Screen sections shown:**
+1. Operations-specific application shell and privileged navigation.
+2. Listing review queue with pending, in-review, approved and rejected states.
+3. Category and recency filters.
+4. Selected listing summary, creator identity and submission metadata.
+5. Product preview and technical/commercial metadata.
+6. Verification evidence checklist covering ownership, license, documentation/demo, compatibility and optional security scan.
+7. Review actions: Request Changes, Reject and Approve Listing.
+
+**Design review notes:**
+- This is the standalone refinement of the bottom-right quadrant in `MT-VIS-001`.
+- The design separates queue triage from detailed evidence assessment and gives reviewers a visible basis for a decision.
+- Sample creator names, products, timestamps, statuses, evidence outcomes and counts are illustrative placeholders, not actual submissions or completed checks.
+- A missing optional security scan must not automatically imply a product is unsafe; required checks and approval criteria must be defined in policy. Creator declarations, platform moderation, and independent technical verification are distinct evidence types.
+- Approval must not imply that submitted software is secure or production-safe unless the platform has a clearly scoped, documented verification process supporting that claim.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; role permissions, reviewer audit trail, evidence viewing, decision confirmation, escalation, responsive behavior, accessibility, and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -193,7 +222,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-MKT-001` | Concept only | Refine and review Marketplace Home |
 | `MT-PDP-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-OPS-001` | Concept only | Refine and review Operations Console |
+| `MT-OPS-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 No screen in this register is currently approved as a pixel-perfect implementation reference.
 
