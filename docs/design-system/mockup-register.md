@@ -582,7 +582,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Statuses, document types, file limits, review steps and sample activity are conceptual placeholders pending policy, provider and legal decisions. Do not request identity documents until the platform has a lawful purpose, secure processor/storage, retention policy and access controls.
 - Rights declarations are product/listing-specific and require evidence/attestation appropriate to the claim; identity verification alone is not proof of software ownership.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-VER-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; KYC/KYB provider, required jurisdictions, evidence retention/deletion, manual review, payout eligibility, rights review, appeal/correction, privacy notices, responsive behavior and exact design tokens remain to be specified.
 
 ## 3. Screen-to-mockup mapping
@@ -675,7 +675,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-ORD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-SVC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-EARN-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-CRT-VER-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-VER-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
