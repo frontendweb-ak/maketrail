@@ -290,7 +290,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Project progress and due dates must be derived from an agreed scope, milestone plan and authorized provider updates. Avoid fabricated percentages or implied guarantees.
 - Implementation service scope, deliverables, acceptance criteria, change requests, payment terms and dispute handling must be explicit and distinct from the product license/order.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-OVW-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; milestone editing, task ownership, file permissions, change requests, delayed/blocked states, buyer/provider communication rules, responsive behavior and exact design tokens remain to be specified.
 
 ## 2.11 Standalone page mockup — Buyer Workspace: Support Center
@@ -320,7 +320,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Support eligibility, duration, response expectations and included/excluded work must come from the buyer's actual license or service agreement. Do not hard-code the sample “90 days” or imply implementation support is included by default.
 - Attachments and logs must warn users not to submit passwords, tokens, private keys, personal data or production secrets. Access to tickets and files is restricted to authorized participants and support staff.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** **APPROVED / FROZEN** — approved 2026-11-25.
 - Desktop only; ticket creation validation, priority/severity rules, SLA policy, secure attachment handling, redaction, escalation, responsive behavior and exact design tokens remain to be specified.
 
 ## 2.12 Standalone page mockup — Buyer Workspace: Account & Settings
@@ -463,7 +463,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-IMPL-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-BUY-SUP-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-ACC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-CRT-OVW-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-OVW-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
