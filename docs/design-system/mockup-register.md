@@ -88,7 +88,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Product name, rating, review count, download count, price, license, update promise, support duration, verification marker, and trust claims are illustrative placeholders. They must not become real claims without evidence, defined policy, and operational capability.
 - The “verified” visual treatment must only be used when a corresponding verification process and evidence record exist; a creator identity or listing approval is not equivalent to code-quality certification.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-PDP-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; responsive behavior, tab interaction, gallery states, checkout/inquiry states, accessibility, and exact design tokens remain to be specified.
 
 ## 3. Screen-to-mockup mapping
@@ -156,7 +156,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 
 - Initial four-screen concept set: **COMPLETED** as a concept baseline (`MT-VIS-001`).
 - Consolidated reference board: **COMPLETED** as a second visual reference (`MT-BOARD-002`).
-- Design freeze: **PARTIALLY FROZEN** — `MT-MKT-001-v1` is approved and frozen as the Marketplace Home desktop visual reference; the remaining three screens and shared design tokens are not frozen.
+- Design freeze: **PARTIALLY FROZEN** — `MT-MKT-001-v1` and `MT-PDP-001-v1` are approved and frozen as desktop visual references; the remaining two screens and shared design tokens are not frozen.
 - Implementation readiness: **NOT READY** — the approved desktop mockup is the visual target, but responsive specifications, interaction states, accessible behavior, and token extraction still remain before implementation.
 
 ## 7. Approval status
@@ -164,7 +164,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | Mockup ID | Current status | Next action |
 |---|---|---|
 | `MT-MKT-001` | Concept only | Refine and review Marketplace Home |
-| `MT-PDP-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-PDP-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-001` | Concept only | Refine and review Creator Studio |
 | `MT-OPS-001` | Concept only | Refine and review Operations Console |
 
