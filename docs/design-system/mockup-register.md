@@ -464,7 +464,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Quotes must explicitly separate product license terms from optional implementation/service scope. Include currency, deliverables, exclusions, validity, support, payment milestones where applicable, and acceptance state.
 - A creator must not see another creator's inquiries or buyer-private data. Declining or closing an inquiry must preserve an auditable history and explain any impact on an existing offer.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-INQ-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; quote revision/expiry, negotiation states, attachments, notifications, response-time policy, organization access, responsive behavior and exact design tokens remain to be specified.
 
 ## 3. Screen-to-mockup mapping
@@ -553,7 +553,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-OVW-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-PROD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-SUB-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-CRT-INQ-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-INQ-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
