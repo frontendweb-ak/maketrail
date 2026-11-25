@@ -144,7 +144,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - A missing optional security scan must not automatically imply a product is unsafe; required checks and approval criteria must be defined in policy. Creator declarations, platform moderation, and independent technical verification are distinct evidence types.
 - Approval must not imply that submitted software is secure or production-safe unless the platform has a clearly scoped, documented verification process supporting that claim.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-OPS-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; role permissions, reviewer audit trail, evidence viewing, decision confirmation, escalation, responsive behavior, accessibility, and exact design tokens remain to be specified.
 
 ## 3. Screen-to-mockup mapping
@@ -212,8 +212,8 @@ The image is a direction-setting concept. It does not establish exact color valu
 
 - Initial four-screen concept set: **COMPLETED** as a concept baseline (`MT-VIS-001`).
 - Consolidated reference board: **COMPLETED** as a second visual reference (`MT-BOARD-002`).
-- Design freeze: **PARTIALLY FROZEN** — `MT-MKT-001-v1`, `MT-PDP-001-v1`, and `MT-CRT-001-v1` are approved and frozen as desktop visual references; the remaining screen and shared design tokens are not frozen.
-- Implementation readiness: **NOT READY** — the approved desktop mockup is the visual target, but responsive specifications, interaction states, accessible behavior, and token extraction still remain before implementation.
+- Design freeze: **DESKTOP SCREENS FROZEN** — `MT-MKT-001-v1`, `MT-PDP-001-v1`, `MT-CRT-001-v1`, and `MT-OPS-001-v1` are approved and frozen as desktop visual references. Responsive behavior, interaction states, and shared design tokens are not yet frozen.
+- Implementation readiness: **NOT READY** — all four representative desktop screens are approved, but responsive specifications, interaction states, accessible behavior, and token extraction still remain before implementation.
 
 ## 7. Approval status
 
@@ -222,7 +222,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-MKT-001` | Concept only | Refine and review Marketplace Home |
 | `MT-PDP-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-OPS-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-OPS-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 No screen in this register is currently approved as a pixel-perfect implementation reference.
 
