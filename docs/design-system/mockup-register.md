@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.6  
+**Register version:** 1.7  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -439,6 +439,34 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** **APPROVED / FROZEN** — approved 2026-11-25.
 - Desktop only; reviewer identity/permissions, revision comparison, evidence uploads, feedback resolution, resubmission rules, withdrawal consequences, responsive behavior and exact design tokens remain to be specified.
 
+## 2.16 Standalone page mockup — Creator Studio: Inquiries
+
+**Mockup ID:** `MT-CRT-INQ-001-v1`  
+**Parent screen ID:** `MT-CRT-INQ-001`  
+**Asset filename:** `a_clean_modern_creator_inquiries_dashboard_for_ma.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator inquiry and quotation workspace.
+
+**Current source asset:** [Open Creator Studio Inquiries mockup](sandbox:/mnt/data/a_clean_modern_creator_inquiries_dashboard_for_ma.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Inquiries navigation active.
+2. Inquiry metrics for new, awaiting creator response, quoted and converted.
+3. Inquiry status tabs, search and filters.
+4. Inquiry list with buyer/organization, requested product or service, reference, date and status.
+5. Selected inquiry detail with buyer request, requirements and conversation history.
+6. Quote summary with scope, deliverables, price, validity and response actions.
+7. Actions to ask for clarification, decline, prepare quote or continue discussion.
+
+**Design review notes:**
+- This is the creator-side counterpart to the buyer inquiry experience; each inquiry must be a shared, permission-controlled record with participant-specific views.
+- Buyer names, organizations, inquiry references, message content, quote values, dates and status counts are illustrative placeholders, not real customer requests or offers.
+- Quotes must explicitly separate product license terms from optional implementation/service scope. Include currency, deliverables, exclusions, validity, support, payment milestones where applicable, and acceptance state.
+- A creator must not see another creator's inquiries or buyer-private data. Declining or closing an inquiry must preserve an auditable history and explain any impact on an existing offer.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; quote revision/expiry, negotiation states, attachments, notifications, response-time policy, organization access, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -525,6 +553,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-OVW-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-PROD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-SUB-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-INQ-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
