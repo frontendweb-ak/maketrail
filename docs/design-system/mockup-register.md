@@ -614,7 +614,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Public storefront visibility must have clear consequences and must not expose private contact details, draft listings, private portfolio material or account-only data.
 - Portfolio projects require rights to publish all screenshots, client names, logos and case-study information; confidential customer material must remain private or redacted.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-SET-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; public/private field rules, profile slug, SEO metadata, social-link validation, portfolio moderation, preview accuracy, visibility states, responsive behavior and exact design tokens remain to be specified.
 
 ## 2.22 Standalone page mockup — Creator Studio: Settings
@@ -645,7 +645,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Integration connections require explicit OAuth consent, narrow scopes, revocation controls and clear data-use explanations. A connected repository does not establish ownership of every listed product.
 - Account deletion/export and security changes require appropriate re-authentication, confirmation, retention explanations and auditable handling. Financial/legal records may have retention obligations.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** **APPROVED / FROZEN** — approved 2026-11-25.
 - Desktop only; tab-specific screens, re-authentication, 2FA recovery, session/device revocation, notification defaults, payout provider settings, integration scopes, privacy/export/deletion lifecycle, responsive behavior and exact design tokens remain to be specified.
 
 ## 3. Screen-to-mockup mapping
@@ -740,7 +740,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-EARN-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-VER-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-PROFILE-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
-| `MT-CRT-SET-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-SET-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
