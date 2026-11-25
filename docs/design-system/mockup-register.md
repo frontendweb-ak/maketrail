@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 0.7  
+**Register version:** 0.8  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -176,6 +176,36 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; responsive navigation, empty states, permissions, data freshness, loading/error behavior, and exact design tokens remain to be specified.
 
+## 2.7 Standalone page mockup — Buyer Workspace: My Orders
+
+**Mockup ID:** `MT-BUY-ORD-001-v1`  
+**Parent screen ID:** `MT-BUY-ORD-001`  
+**Asset filename:** `a_clean_modern_ui_dashboard_screenshot_for_maketr.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop buyer orders list and selected-order detail view.
+
+**Current source asset:** [Open Buyer Workspace My Orders mockup](sandbox:/mnt/data/a_clean_modern_ui_dashboard_screenshot_for_maketr.png)
+
+**Screen sections shown:**
+1. Buyer workspace shell with Orders navigation active.
+2. Order summary metrics: total, active, completed and pending action.
+3. Order status tabs and search/category/status/sort filters.
+4. Selectable order list with product, creator, date, price and status.
+5. Selected order detail with order identifier and purchase date.
+6. Order lifecycle timeline: placed, payment confirmed, implementation and delivery.
+7. Implementation progress, current update and next milestone.
+8. Deliverables checklist and buyer actions to view details, contact creator or request an update.
+
+**Design review notes:**
+- This is a new buyer-surface screen following the Buyer Workspace Overview concept.
+- The layout combines order discovery and selected-order progress to reduce navigation between list and detail views.
+- Product/creator names, order references, dates, prices, counts, statuses, progress percentage, updates, milestone estimates and deliverables are illustrative placeholders, not actual transactions or service commitments.
+- Product purchase and implementation service must remain distinguishable in order data and terms, even when displayed together in one buyer workflow.
+- Progress and delivery estimates must be sourced from an agreed implementation plan and provider updates; never fabricate completion percentages or dates.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; order permissions, cancellation/refund/dispute states, status transitions, responsive behavior, empty/error/loading states, audit history, and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -253,6 +283,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-OPS-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-BUY-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-BUY-ORD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 No screen in this register is currently approved as a pixel-perfect implementation reference.
 
