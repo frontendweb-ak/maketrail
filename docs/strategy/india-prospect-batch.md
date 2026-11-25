@@ -85,3 +85,65 @@ For each selected person:
 - The current sources do not establish demand, willingness to pay, product-market fit, or transaction feasibility.
 
 Update this file only when a lead has been manually reviewed or new evidence materially changes its priority. Record actual outreach and interviews in the operating tracker; do not change a prospect's status based on assumptions.
+
+
+## 6. First-batch screening — public-source review
+
+**Reviewed:** 2026-11-25  
+**Method:** Public company/product pages and directory listings only. No direct contact, independent reference checks, repository inspection, or product testing was performed.
+
+### Buyer organization screen
+
+| Organization | Public evidence reviewed | Preliminary fit | Decision-maker role to seek | Main validation question / caution |
+|---|---|---|---|---|
+| Mariox Software | Its site describes custom product engineering, bespoke platforms, web platforms, backend APIs, workflow automation, and integrations. It publishes claims of 100+ engineers and 300+ products shipped; these are company claims, not independently verified. | **Priority 1 — strongest public fit** | Founder, CTO, Head of Engineering, or delivery lead | Does the team repeatedly rebuild or integrate the same capabilities across client engagements? Ask for one recent example and actual build/reuse/purchase decision. Avoid assuming scale claims imply buying need. |
+| TechsBeta | Its site lists software solutions and application development, and names products including food delivery, hospital management, HRMS, e-commerce, and inventory software. It also shows named team roles and recent work. | **Priority 2 — plausible, needs qualification** | Founder/Managing Director or technical delivery lead | Are these repeatable products/modules, client-specific projects, or marketing examples? Which capabilities are reused across paid engagements? Public site also lists a Satta Matka application; do not solicit, list, facilitate, or pursue any gambling-related product or service. Keep discussion limited to lawful, unrelated software work. |
+| Easy Dots Technologies | Its site describes software and web application development, custom administration areas, e-commerce, hotel/college management systems, and technologies including JavaScript, .NET, Java, and WordPress. Public contact page identifies Agra and Kanpur offices. | **Priority 3 — smaller/regional perspective; evidence needs verification** | Founder, technical lead, or software delivery manager | Is current work primarily custom application delivery or web/marketing services? Ask about a recent application project, repeated module needs, and the actual technical stack. Website claims are self-published and not independently verified. |
+
+Sources:
+- Mariox custom software: https://www.marioxsoftware.com/custom-software-development-company
+- Mariox company profile: https://www.marioxsoftware.com/about
+- Mariox contact: https://www.marioxsoftware.com/contact
+- TechsBeta services, products, team and work: https://techsbeta.com/
+- Easy Dots services and technology claims: https://www.easydotstechno.com/
+- Easy Dots contact: https://www.easydotstechno.com/contact-us.php
+
+**Screening outcome:** Mariox is the best first interview target based on public service fit. TechsBeta and Easy Dots remain conditional candidates. This is not a conclusion that any organization has a need, budget, or interest in Maketrail.
+
+### Creator/product candidate screen
+
+These are five named creator/product leads surfaced through public Indian maker/product directories. They are **not qualified suppliers** and are not necessarily a fit for the initial marketplace wedge. Their inclusion is for interview discovery: understand how they built, distributed, licensed, maintained, and supported reusable software.
+
+| Candidate | Publicly described product | Creator shown by directory | Initial relevance hypothesis | Important gaps before qualification |
+|---|---|---|---|---|
+| MCPGram | MCP gateway bringing native OAuth apps and external MCP servers into a shared tool catalog/workspace; web and CLI; listed as freemium. | Aryan Verma | Strongest technical-infrastructure discovery lead: connector integration, workspace controls, and developer onboarding. | Confirm creator identity/ownership, actual license and distribution rights, supported versions, documentation, deployment model, support availability, and whether a reusable distributable component is offered rather than only hosted SaaS. |
+| Verse Engine by Ctruh | Browser-native 3D/XR engine for preparing, rendering, streaming, and deploying interactive 3D experiences; listing describes Rust, WASM, WebGPU and WebGL2. | Vinay Agastya / Team Ctruh | Potential SDK/engine or integration infrastructure; useful to learn about complex developer-product packaging and implementation services. | Establish what is actually available to third parties (SDK/API/source/license), supported formats/browsers, commercial rights, documentation, compatibility evidence, and support commitments. |
+| code.live | Free browser-based developer utilities for JSON, regex, JWT, SQL, CSS, DevOps and security tasks; directory listing describes 177+ tools. | Suhail Roushan | Useful creator interview about building and maintaining a developer-tool collection and possible reusable utility components. | A free hosted toolbox is not automatically a distributable software module. Confirm ownership, source/license, reuse rights, APIs or embeddable components, maintenance and commercial interest. |
+| MCPhq | Ranked directory of MCP servers, with discovery by use case and installs. | Angad Singi | Relevant to discovery metadata, developer ecosystem curation, and how maintainers signal compatibility/maintenance. | Directory business rather than clearly reusable software component; confirm product ownership, data provenance, listing rights, API/data export rights, and whether there is an independently distributable technical product. |
+| Sendly | Peer-to-peer file sharing with optional end-to-end encryption; Launchbase describes large-file transfer without cloud storage intermediaries. | Saikat (Launchbase founder field says “Saikat”; submitter label “Sendly DEVELOPER”) | Potentially relevant to file-transfer/security workflows and a creator's approach to product trust. | Product listing gives limited technical detail. Verify the actual creator identity, cryptographic design, threat model, license/API/SDK availability, security review evidence, and whether any reusable component can be licensed. Do not repeat the listing's security claims as verified facts. |
+
+Sources:
+- MCPGram listing and creator: https://www.indietools.app/products/mcpgram
+- Verse Engine listing and founder: https://launchbase.in/products/verse-engine-by-ctruh
+- code.live listing and creator: https://www.indietools.app/products/codelive
+- MCPhq listing and creator: https://www.indietools.app/products/mcphq
+- Sendly listing and founder field: https://launchbase.in/products/sendly
+
+**Creator screening order:** MCPGram → Verse Engine → code.live → MCPhq → Sendly. This order reflects potential interview relevance to developer infrastructure, not product quality or supplier qualification.
+
+### First outreach recommendation
+
+Keep the first contact wave small and manually personalized:
+1. Start with one buyer interview invitation to a suitable Mariox technical decision-maker, after checking the current public business channel.
+2. Screen a suitable TechsBeta decision-maker for relevance and lawful software scope before deciding whether to invite.
+3. Treat Easy Dots as a lower-priority regional comparison, not a confirmed buyer lead.
+4. Start creator discovery with MCPGram and Verse Engine; then invite code.live if the goal is to understand reusable developer tooling. MCPhq and Sendly are useful contrast interviews if the first three do not reveal a relevant distributable product.
+5. Do not contact all founders with the same message. Use the existing outreach templates and explicitly state this is research, not a listing offer or commercial commitment.
+
+### Rejection / disqualification rules
+
+Do not qualify a candidate if ownership or distribution rights cannot be established, if the product depends on unauthorized third-party material, if the creator cannot explain licensing/support, or if the proposed product/service is unlawful or outside Maketrail's safety and compliance boundaries. A directory entry, public demo, popularity signal, or founder-declared country is not evidence of ownership, quality, compatibility, or willingness to sell.
+
+## 7. Review limitations
+
+This screening is a desk-research pass only. It does not verify the organizations' current operating status, financial condition, delivery history, customer references, staff roles, creator identities, source-code ownership, licenses, security, compatibility, or willingness to participate. Public claims are attributed to their publishers. Re-check source pages immediately before outreach because company websites and directory records can change.
