@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.9  
+**Register version:** 2.0  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -526,6 +526,37 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-SVC-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; service package/quote model, availability calendar, capacity limits, request eligibility, pausing behavior, existing agreement handling, responsive behavior and exact design tokens remain to be specified.
 
+## 2.19 Standalone page mockup — Creator Studio: Earnings & Payouts
+
+**Mockup ID:** `MT-CRT-EARN-001-v1`  
+**Parent screen ID:** `MT-CRT-EARN-001`  
+**Asset filename:** `a_crisp_high_resolution_ui_dashboard_screenshot.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator financial overview, transaction ledger and payout history.
+
+**Current source asset:** [Open Creator Studio Earnings & Payouts mockup](sandbox:/mnt/data/a_crisp_high_resolution_ui_dashboard_screenshot.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Earnings navigation active.
+2. Date-range selector and gross sales, marketplace fees, refunds/adjustments and net earnings summaries.
+3. Earnings-over-time chart with gross and net series.
+4. Payout balance panel distinguishing available and pending balances.
+5. Estimated next payout date with explicit estimate caveat.
+6. Payout account summary and management action.
+7. Transaction ledger with order, buyer, gross, fees, net and settlement status.
+8. Payout history with payout identifiers, dates, amounts and statuses.
+9. Transaction export action.
+
+**Design review notes:**
+- All figures, buyers, orders, dates, payout identifiers and statuses in this concept are illustrative; they are not actual financial data, a promise of earnings, or a payout schedule.
+- Define gross sales, marketplace fees, refunds, chargebacks, taxes/withholding where applicable, reserves, pending balance, available balance and net creator earnings precisely. Reconcile them against an auditable financial ledger.
+- Available balance must only include funds that the payment provider and platform policy make eligible for payout. Do not imply that Maketrail holds funds in escrow.
+- Payout date must be labeled estimated until provider settlement and compliance checks confirm it. Account verification status must be evidence-backed.
+- Exported financial data must be scoped to the authenticated creator and protected against cross-account access.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; accounting definitions, currency conversion, tax documents, refunds/chargebacks, payout failures/holds, provider reconciliation, permissions, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -615,6 +646,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-INQ-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-ORD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-SVC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-EARN-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
