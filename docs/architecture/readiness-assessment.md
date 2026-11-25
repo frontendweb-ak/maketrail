@@ -16,7 +16,8 @@ This assessment is an index and readiness control, not a replacement for the lin
 
 ### Current recommendation
 
-- Start architecture discovery now, with reversible options and explicit assumptions.
+- Proceed with bounded MVP definition and architecture discovery in parallel, using the active MVP scope draft as the workflow input.
+- Keep market validation proportional: obtain minimum credible buyer, supply, rights, and transaction evidence; the full interview/transaction targets are not prerequisites to define the MVP.
 - Do not select a production stack, commit to a payment provider, procure infrastructure, design a final physical schema, or start application implementation yet.
 - Do not treat the 23 registered screen concepts as an approved product scope. The mockup register remains the source of truth for each screen's approval status.
 - Reassess readiness when the blocking evidence below has been recorded and reviewed.
