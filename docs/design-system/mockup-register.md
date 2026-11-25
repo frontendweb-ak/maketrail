@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 0.9  
+**Register version:** 1.0  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -234,6 +234,36 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
 - Desktop only; entitlement/expiry states, revoked/refunded access, update compatibility, download security, empty/error/loading states, responsive behavior and exact design tokens remain to be specified.
 
+## 2.9 Standalone page mockup — Buyer Workspace: Inquiries
+
+**Mockup ID:** `MT-BUY-INQ-001-v1`  
+**Parent screen ID:** `MT-BUY-INQ-001`  
+**Asset filename:** `a_clean_modern_ui_dashboard_screenshot_for_maketra.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop buyer inquiry management and conversation view.
+
+**Current source asset:** [Open Buyer Workspace Inquiries mockup](sandbox:/mnt/data/a_clean_modern_ui_dashboard_screenshot_for_maketra.png)
+
+**Screen sections shown:**
+1. Buyer workspace shell with Inquiries navigation active.
+2. Inquiry summary metrics: total, awaiting response, quotes received and converted to orders.
+3. Inquiry status tabs and new inquiry action.
+4. Searchable inquiry list with product, creator, reference, recency and status.
+5. Selected inquiry conversation with message history and attachment.
+6. Conversation tabs for quotation, details and activity.
+7. Inquiry summary and latest quotation panel.
+8. Actions to view quotation, convert to order and continue discussion.
+
+**Design review notes:**
+- This screen provides the buyer-side workflow for clarifying product fit, requesting implementation scope, receiving a quote and deciding whether to proceed.
+- The conversation is tied to an inquiry record and must not become an unrestricted general-purpose chat system by implication.
+- Sample inquiry IDs, creator names, message text, timestamps, quotation amount, timeline and counts are illustrative placeholders, not real communications or commercial offers.
+- A quote must have explicit scope, price/currency, validity, deliverables, exclusions, provider identity and acceptance state. “Convert to Order” must only be available when a valid quote/offer is accepted and the transaction terms are recorded.
+- Message and attachment access must be limited to authorized inquiry participants and platform operators with an appropriate support/moderation reason.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; unread/read states, message delivery failures, attachments, quote expiry/revision, inquiry closure, participant permissions, responsive behavior, and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -313,6 +343,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-BUY-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-ORD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 | `MT-BUY-PROD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-BUY-INQ-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
