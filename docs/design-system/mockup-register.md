@@ -1,7 +1,7 @@
 # Maketrail visual mockup register
 
 **Status:** Initial concept reference — not final-approved  
-**Register version:** 1.7  
+**Register version:** 1.8  
 **Created:** 2026-11-24  
 **Branch:** `develop`
 
@@ -467,6 +467,37 @@ This board consolidates the four existing screen IDs and introduces visual token
 - **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-INQ-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; quote revision/expiry, negotiation states, attachments, notifications, response-time policy, organization access, responsive behavior and exact design tokens remain to be specified.
 
+## 2.17 Standalone page mockup — Creator Studio: Orders
+
+**Mockup ID:** `MT-CRT-ORD-001-v1`  
+**Parent screen ID:** `MT-CRT-ORD-001`  
+**Asset filename:** `a_clean_modern_saas_dashboard_ui_light_mode_whit.png`  
+**Format:** PNG  
+**Scope:** Standalone desktop creator order management and fulfilment overview.
+
+**Current source asset:** [Open Creator Studio Orders mockup](sandbox:/mnt/data/a_clean_modern_saas_dashboard_ui_light_mode_whit.png)
+
+**Screen sections shown:**
+1. Creator Studio shell with Orders navigation active.
+2. Order summary metrics: all, awaiting fulfilment, in progress and completed.
+3. Order status tabs and filters for status, type, product/service and date.
+4. Order table with buyer, item, transaction type, date, amount and status.
+5. Selected order detail with buyer identity and order date.
+6. Separate order items for product license and implementation service.
+7. Order subtotal/total and payment-confirmed state.
+8. Fulfilment timeline from order confirmation through fulfilment, delivery/handover and completion.
+9. Actions to view order, update fulfilment, message buyer and request clarification.
+
+**Design review notes:**
+- Product license and implementation service are separate order items with distinct commercial terms, fulfilment obligations and entitlements, even when shown in one order.
+- Buyer names, order IDs, amounts, dates, payment state, fulfilment status and timeline entries are illustrative placeholders, not real transactions or provider commitments.
+- Payment confirmation must come from verified provider-side events/API state, never from a client redirect or creator action.
+- Fulfilment updates must reflect an agreed delivery plan. Completion should follow the defined acceptance process; do not let a creator unilaterally imply buyer acceptance.
+- Creator access must be restricted to orders involving that creator's product or service. Buyer personal and organization information should be minimized to what fulfilment requires.
+- **Delivery status:** COMPLETED — standalone concept produced and registered.
+- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- Desktop only; refunds/cancellations/disputes, partial fulfilment, product-only orders, service-only orders, payment reversals, buyer acceptance, audit history, responsive behavior and exact design tokens remain to be specified.
+
 ## 3. Screen-to-mockup mapping
 
 | Mockup ID | Screen name | Image position | Intended surface | Primary purpose |
@@ -554,6 +585,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-PROD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-SUB-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-INQ-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
+| `MT-CRT-ORD-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
