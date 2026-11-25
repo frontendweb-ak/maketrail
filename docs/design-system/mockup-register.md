@@ -554,7 +554,7 @@ This board consolidates the four existing screen IDs and introduces visual token
 - Payout date must be labeled estimated until provider settlement and compliance checks confirm it. Account verification status must be evidence-backed.
 - Exported financial data must be scoped to the authenticated creator and protected against cross-account access.
 - **Delivery status:** COMPLETED — standalone concept produced and registered.
-- **Approval status:** PENDING — not frozen and not yet an implementation-ready source of truth.
+- **Approval status:** APPROVED / FROZEN — visual reference v1 approved on 2026-11-25. Use this mockup as the authoritative desktop visual target for `MT-CRT-EARN-001`; responsive layouts, interaction states, accessibility behavior, and implementation specifications must still be documented before coding.
 - Desktop only; accounting definitions, currency conversion, tax documents, refunds/chargebacks, payout failures/holds, provider reconciliation, permissions, responsive behavior and exact design tokens remain to be specified.
 
 ## 3. Screen-to-mockup mapping
@@ -646,7 +646,7 @@ The image is a direction-setting concept. It does not establish exact color valu
 | `MT-CRT-INQ-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-ORD-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 | `MT-CRT-SVC-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
-| `MT-CRT-EARN-001` | Standalone concept v1 completed; approval pending | Review this page, then specify responsive and interaction states |
+| `MT-CRT-EARN-001` | **APPROVED / FROZEN** — standalone visual v1 | Preserve the approved desktop visual; specify responsive and interaction behavior before implementation |
 
 The four initial desktop screens are approved and frozen as visual references. They are not complete implementation specifications: responsive behavior, interaction states, accessible behavior, and final design tokens remain separate deliverables.
 
