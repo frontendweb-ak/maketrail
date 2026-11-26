@@ -5,7 +5,8 @@
 - [Product requirements document](product/prd.md) — draft, pending validation
 - [MVP scope proposal](product/mvp-scope.md) — conditional scope; not approved or frozen
 - [Target user personas](product/personas.md) — hypotheses to validate
-- [Proposed user journeys](product/user-journeys.md) — draft flows
+- [Proposed user journeys](product/user-journeys.md) — detailed buyer, creator, and operations workflows; not approved or frozen
+- [MVP authorization matrix](product/authorization-matrix.md) — proposed resource permissions, inquiry/listing transitions, privacy boundaries, and authorization tests
 - [Information architecture](product/information-architecture.md) — proposed sitemap, navigation, routes, and surface boundaries
 - [Transaction lifecycle](product/transaction-lifecycle.md) — conceptual payment and fulfillment states
 
